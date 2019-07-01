@@ -2,22 +2,6 @@
 @media only screen and (min-width: 35rem) {
 
 
-/*------------HEADER------------------*/
-header h1 {
-    margin:0; 
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    
-}
-header h2 {
-    margin:75px;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    
-}
-
 
 /*----------- NAVIGATION --------------*/
    
@@ -31,6 +15,7 @@ nav ul li a{
     border: none;
     border-right: 1px solid black;
 }
+nav ul 
     
 /*----------home page-----------------*/
 .text-block {padding: 30px 0px 10px 0px;}
