@@ -2,22 +2,6 @@
 @media only screen and (min-width: 35rem) {
 
 
-/*------------HEADER------------------*/
-header h1 {
-    margin:0; 
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    
-}
-header h2 {
-    margin:75px;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    
-}
-
 
 /*----------- NAVIGATION --------------*/
    
@@ -31,30 +15,5 @@ nav ul li a{
     border: none;
     border-right: 1px solid black;
 }
+
     
-/*----------home page-----------------*/
-.text-block {padding: 30px 0px 10px 0px;}
-
-button{
-    margin-bottom:1.5rem;
-    height:48px;
-    font-size:30px;
-
-}
-    
-div.templeActivities figure {
-flex-basis: 46%;
-}
-.tdih img{
-    width:50%;
-    float:right;
-}  
-    
-.contactInfo{
-    justify-content: space-around;
-}
-
-
-
-
-}

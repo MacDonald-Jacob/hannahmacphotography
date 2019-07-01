@@ -15,31 +15,5 @@ nav ul li a{
     border: none;
     border-right: 1px solid black;
 }
-nav ul 
+
     
-/*----------home page-----------------*/
-.text-block {padding: 30px 0px 10px 0px;}
-
-button{
-    margin-bottom:1.5rem;
-    height:48px;
-    font-size:30px;
-
-}
-    
-div.templeActivities figure {
-flex-basis: 46%;
-}
-.tdih img{
-    width:50%;
-    float:right;
-}  
-    
-.contactInfo{
-    justify-content: space-around;
-}
-
-
-
-
-}
