@@ -1,0 +1,94 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html, body { font-family:sans-serif; }
+
+
+/*-------------HEADER------------------*/
+header {
+    
+    background-color: white;
+    color:black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+}
+
+/*-----------NAVAGATION----------------*/
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color:black;
+}
+
+nav {
+    overflow:auto;
+    background-color: white;
+    
+}
+nav ul {
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: black;
+    padding: .8rem 2%;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    border-top:1px solid rgba(0,0,0,0.3)
+}
+
+nav ul li a:hover {
+    background-color: rgba(80,137,145,.5);
+    color: white;
+}
+
+nav ul li.active a {
+    background-color: rgba(80,137,145,.2);
+    color: white;    
+}
+nav ul.hide {display:none;}
+
+/*-------------MAIN--------------------*/
+main {
+    clear:both;
+    min-height: 10rem;
+}
+
+
+
+/*---------------------------------*/
+
+hr { clear:both; }
+/*------- Contact Info-------------*/
+.contactInfo {
+    display:flex;
+    flex-wrap:wrap;
+    background-color: #172A3A;
+    color:white;
+    padding:5px 20px;
+}
+
+.contactInfo p {
+    font-style:italic; 
+}
+
+/*--------FOOTER-----------------------*/
+footer {
+    background-color:white;
+    color:black;
+    padding:10px;
+    text-align:center;
+}
+
+
+
+
