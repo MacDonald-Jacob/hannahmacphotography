@@ -70,18 +70,7 @@ main {
 /*---------------------------------*/
 
 hr { clear:both; }
-/*------- Contact Info-------------*/
-.contactInfo {
-    display:flex;
-    flex-wrap:wrap;
-    background-color: #172A3A;
-    color:white;
-    padding:5px 20px;
-}
 
-.contactInfo p {
-    font-style:italic; 
-}
 
 /*--------FOOTER-----------------------*/
 footer {

@@ -1,0 +1,43 @@
+#background img {
+    margin-top:10px;
+    width: 100%;
+    animation-name: backgroundFadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; 
+    animation-duration: 50s;
+    animation-direction: alternate; 
+    position:absolute;
+}
+#background img:nth-of-type(1) {
+    animation-delay: 40s;
+}
+#background img:nth-of-type(2) {
+    animation-delay: 30s;
+}
+
+#background img:nth-of-type(3) {
+    animation-delay: 20s;
+}
+
+#background img:nth-of-type(4) {
+    animation-delay: 10s;
+}
+#background img:nth-of-type(5) {
+    animation-delay: 1s;
+}
+
+@keyframes backgroundFadeInOut {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0; 
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
