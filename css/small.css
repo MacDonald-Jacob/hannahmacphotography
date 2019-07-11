@@ -25,7 +25,9 @@ header {
     flex-wrap: wrap;
     justify-content: flex-start;
 }
-
+header img{
+    width:100%;
+}
 
 /*-----------NAVAGATION----------------*/
 

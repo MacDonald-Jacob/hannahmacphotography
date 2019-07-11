@@ -1,13 +1,18 @@
 .parallax {
-    /* The image used */
-    background-image: url("../images/IMG_1805-2.jpg");
-    /* Set a specific height */
-    min-height: 500px;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("../images/smallFamily.jpg");
+    min-height: 300px;
+
+}
+@media only screen and (min-width:450px){
+    .parallax{
+        background-image: url("../images/IMG_1805-2.jpg");
+        min-height: 500px;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 .words {
