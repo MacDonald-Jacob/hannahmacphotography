@@ -3,14 +3,27 @@
  * relavent to their corresponding pages.
  */
 
-function loadPhotos() {
-   // grab photos from folder and load into an array
-   photoArray = Folder('./images/').getFiles();
-
+function loadPhotos(elementName) {
    // grab folder name (code from Ryan Kinal @
    // https://stackoverflow.com/questions/3151436/how-can-i-get-the-current-directory-name-in-javascript)
-   var loc = window.location.pathname;
-   var dir = loc.substring(0, loc.lastIndexOf('/'));
+   let loc = window.location.pathname;
+   let dir = loc.substring(0, loc.lastIndexOf('/'));
+
+   // grab photos from folder and load into an array
+   let folderName = `${dir}/images/`;
+   console.log(`"${folderName}"`);
+
+   var xhr = new XMLHttpRequest();
+   xhr.open('GET', '/favicon.png');
+   xhr.responseType = 'blob'; //force the HTTP response, response-type header to be blob
+   xhr.onload = function() {
+      photoFolder = xhr.response; //xhr.response is now a blob object
+   };
+   xhr.send();
+
+   console.log(photoFolder);
+
+   let photoArray = [1, 2, 3, 4, 5]; //photoFolder.getFiles();
 
    // for scaling pictures (maybe)
    let height = 50;
@@ -18,10 +31,11 @@ function loadPhotos() {
 
    // use array to generate html
    let html = '';
-   for (let i = 0; i < photoArray.length(); i++) {
-      html += `<img src="${photoArray[i]}" alt="${dir + i}.jpg" />`;
+   for (let i = 0; i < photoArray.length; i++) {
+      html += `<img src="${photoArray[i]}" alt="${dir + (i + 1)}.jpg" />`;
    }
 
-   // return html to load for needed page
-   return html;
+   document.getElementById(elementName).innerHTML = html;
 }
+
+window.addEventListener('onload', loadPhotos('bridalGallery'));
