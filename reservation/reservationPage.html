@@ -1,49 +1,174 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="Fill Me In">
-        <meta name="author" content="John Doe">
 
-        <title>Reservation: HannahMacPhotography</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        
-        <link rel="icon" href="../images/tabLogo.png">
-        <link href="../css/normalize.css" rel="stylesheet">
-        <link href="../css/small.css" rel="stylesheet">
-        <link href="../css/medium.css" rel="stylesheet">
-        <link href="../css/large.css" rel="stylesheet">
 
-        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <img src="../images/logo.png" alt="logo">
-        </header>
-        
-        <nav>
-            <button onclick="toggleMenu()">&#9776;</button>
-            <ul id="primaryNav" class="hide">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="">Photography</a></li>
-                <li><a href="../videography/videographyPage.html">Videography</a></li>
-                <li class="active"><a href="reservation/reservationPage.html">Reservations</a></li>
-                <li><a href="../bioContact/bioContactPage.html">Bio & Contact Page</a></li>  
-            </ul>
-        </nav>
-        
-        <main>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Fill Me In">
+	<meta name="author" content="John Doe">
 
-        
-        </main>
-        
-        <footer>
-            &copy; HannahMacPhotography
+	<title>Reservation: HannahMacPhotography</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        </footer>
-        <script src="../scripts/hamburger.js"></script>
+	<link rel="icon" href="../images/tabLogo.png">
+	<link href="../css/normalize.css" rel="stylesheet">
+	<link href="../css/small.css" rel="stylesheet">
+	<link href="../css/medium.css" rel="stylesheet">
+	<link href="../css/large.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 
-    
-    </body>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<img src="../images/logo.png" alt="logo">
+	</header>
+
+	<nav>
+		<button onclick="toggleMenu()">&#9776;</button>
+		<ul id="primaryNav" class="hide">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="">Photography</a></li>
+			<li><a href="../videography/videographyPage.html">Videography</a></li>
+			<li class="active"><a href="reservation/reservationPage.html">Reservations</a></li>
+			<li><a href="../bioContact/bioContactPage.html">Bio & Contact Page</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<section id="section-1">
+			<h2>Contact Me Directly</h2>
+			<p>Have Questions, Need More Information, or Just Want to Say "Hi"?</p>
+			<a href="../bioContact/bioContactPage.html#contact-form">Contact Me Here!</a>
+		</section>
+
+		<section id="section-forecast">
+			<h2>5-Day Weather Forecast</h2>
+			<div id="weather-wrapper">
+				<div id="search-header">
+					<h3>Enter the name of a city i.e. Chicago, London, Santa Barbara, Buenos Aires</h3>
+					<div id="search">
+						<input type="text" placeholder="Enter City Name" id="search-txt">
+						<button id="search-btn-2" class="search-btn-2">Search</button>
+					</div>
+
+					<h2>Your City</h2>
+
+					<div class="city-icon">
+						<div class="city-icon-holder">
+							<div id="city-name"></div>
+
+							<!--<img src="" alt="" id="icon">-->
+						</div>
+					</div>
+				</div>
+				<section id="day-1">
+					<h3>Day 1 Weather</h3>
+					<div class="weather-details">
+						<div id="description"></div>
+						<div class="temperature">
+							<div id="temp"></div>
+						</div>
+
+						<div class="humidity">
+							<div id="humidity-div"></div>
+						</div>
+						<div class="wind-speed">
+							<div id="wind"></div>
+						</div>
+					</div>
+				</section>
+
+				<section id="day-2">
+					<h3>Day 2 Weather</h3>
+					<div class="weather-details">
+						<div id="description"></div>
+						<div class="temperature">
+							<div id="temp"></div>
+						</div>
+
+						<div class="humidity">
+							<div id="humidity-div"></div>
+						</div>
+						<div class="wind-speed">
+							<div id="wind"></div>
+						</div>
+					</div>
+				</section>
+
+				<section id="day-3">
+					<h3>Day 3 Weather</h3>
+					<div class="weather-details">
+						<div id="description"></div>
+						<div class="temperature">
+							<div id="temp"></div>
+						</div>
+
+						<div class="humidity">
+							<div id="humidity-div"></div>
+						</div>
+						<div class="wind-speed">
+							<div id="wind"></div>
+						</div>
+					</div>
+				</section>
+
+				<section id="day-4">
+					<h3>Day 4 Weather</h3>
+					<div class="weather-details">
+						<div id="description"></div>
+						<div class="temperature">
+							<div id="temp"></div>
+						</div>
+
+						<div class="humidity">
+							<div id="humidity-div"></div>
+						</div>
+						<div class="wind-speed">
+							<div id="wind"></div>
+						</div>
+					</div>
+				</section>
+
+				<section id="day-5">
+					<h3>Day 5 Weather</h3>
+					<div class="weather-details">
+						<div id="description"></div>
+						<div class="temperature">
+							<div id="temp"></div>
+						</div>
+
+						<div class="humidity">
+							<div id="humidity-div"></div>
+						</div>
+						<div class="wind-speed">
+							<div id="wind"></div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+
+
+	</main>
+
+	<footer>
+		<p>&copy; HannahMacPhotography</p>
+		<div id="social-media-icons">
+			<a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/facebook-3-transparent-dkgray.png" alt="facebook"></a>
+			<a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/facebook-like-2-transparent-dkgray.png" alt="facebook-like"></a>
+			<a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/twitter-4-transparent-dkgray.png" alt="twitter"></a>
+			<a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/instagram-3-transparent-dkgray.png" alt="instagram"></a>
+			<a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/pinterest-3-transparent-dkgray.png" alt="pinterest"></a>
+			<a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/linkedin-2-transparent-dkgray.png" alt="linkedin"></a>
+			<a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/share-3-transparent-dkgray.png" alt="share-this"></a>
+		</div>
+	</footer>
+	<script src="../scripts/hamburger.js"></script>
+
+
+</body>
+
 </html>
