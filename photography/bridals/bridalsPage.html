@@ -36,7 +36,7 @@
         
         <main>
 
-        
+        <div id='bridalGallery' class="gallery"></div>
         </main>
         
         <footer>
@@ -44,6 +44,11 @@
 
         </footer>
         <script src="../../scripts/hamburger.js"></script>
+        <script src="../../scripts/photoLibrary.js">
+            let photos = loadPhotos();
+            // put the photos where they belong
+            document.getElementById('bridalGallery').innerHTML = photos;
+        </script>
 
     
     </body>
