@@ -94,17 +94,28 @@ main {
 
 h2 {
     color: #70548b;
-	margin: 0px;
+	margin: 22px;
 
 }
 
 p {
     color: #45342a;
-	margin: 10px
+	margin: 20px
+}
+
+h3 {
+	margin: 20px;
 }
 
 
+/*--------forecast styling-----------------------*/
+table {
+	margin: 20px;
+}
 
+.italic-testimonials {
+	font-style: italic;
+}
 
 /*--------FOOTER-----------------------*/
 
