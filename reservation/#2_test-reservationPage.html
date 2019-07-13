@@ -1,28 +1,36 @@
-<!DOCTYPE html>
+<!--
+//in hannahmac local repo
+test-reservationPage.html
+-->
+<!doctype html>
 <html lang="en">
 
 
 <head>
 	<meta charset="utf-8">
-
-	<meta name="description" content="CIT 261 Final Project_Group 5">
+	<meta name="description" content="Fill Me In">
 	<meta name="author" content="Kimberly Llanos, Jacob MacDonald, Austin, Kincade">
 
-
-	<title>Reservation: HannahMacPhotography</title>
-
+	<title>test-Reservation: HannahMacPhotography</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link href="../css/normalize.css" rel="stylesheet">
-	<link href="../css/large.css" rel="stylesheet">
-	<link href="../css/medium.css" rel="stylesheet">
-	<link href="../css/reservation-small.css" rel="stylesheet">
-	<!--<link href="../css/small.css" rel="stylesheet">-->
-	<link href="../css/reservation.css" rel="stylesheet">
-	<!--<link href="../css/five-day-forecast.css" rel="stylesheet">--
 
-	<!-- import Google fonts -->
+	<link rel="icon" href="../images/tabLogo.png">
+	
+	<!-- glocal css styling -->
+	<link href="../css/normalize.css" rel="stylesheet">
+	<link href="../css/small.css" rel="stylesheet">
+	<link href="../css/medium.css" rel="stylesheet">
+	<link href="../css/large.css" rel="stylesheet">
+	
+	<!-- local css styling -->
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/calendar.css" rel="stylesheet">
+	
+
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
+	
+	<script src="js/use-this-one-calendar.js"></script>
 </head>
 
 <body>
@@ -42,40 +50,30 @@
 	</nav>
 
 	<main>
-
 		<section id="section-intro">
 			<h2>My Current Availability</h2>
-			<p>Please let me know what dates and times you are interested in and then fill out 
-			<a class="contact-bookmark" href="../bioContact/bioContactPage.html#contact-form">this form</a> to contact me directly. 
-			<br><br>
-			I will contact you within 24 hours ~ please be sure to let me know if you prefer me to email, call, or text you! 
-			<br><br>
-			In case you are looking to book a photograpy or videography session with me sooner rather than later, below is a 5-day forecast to give you an idea of what the weather will be like beginning with today's weather.
-			<br>
-			</p>
+			<p>My availability is listed in the calendar below, and I have included a 5-day forecast so you can get an idea of what the weather will be like today and for the next 4 days!</p>
 		</section>
 
-		
-		<section id="reservation-calendar">
-			<div class="w3-container">
-			<!-- calendar [date] selector -->
-				<div id="cal-date">
-					<select id="cal-mth"></select>
-					<select id="cal-yr"></select>
-					<input id="cal-set" type="button" value="SET" />
-				</div>
-
-				<!-- calendar container -->
-				<div id="cal-container"></div>
-
-				<!-- calendar event -->
-				<div id="cal-event"></div>
+		<section id="section-availability-calendar">
+			<div id="cal-date">
+				<select id="cal-mth"></select>
+				<select id="cal-yr"></select>
+				<input id="cal-set" type="button" value="SET" />
 			</div>
-		</section>
 
-		
-		<section id="forecast-container">
+			<!-- the calendar container with current day/month  -->
+			<div id="cal-container"></div>
+
+			<!-- availability times for each day -->
+			<div id="cal-event"></div>
+		</section>
+		<script src="scripts/calendar.js"></script>
+
 		<h2>Five Day Forecast</h2>
+
+		<section id="forecast-container">
+
 			<div id="current-conditions-container">
 				<div class="text-block">
 					<h3>Current Conditions</h3>
@@ -141,29 +139,39 @@
 				</table>
 			</div>
 		</section>
+
+		<section id="section-contact-me">
+			<h2>Contact Me Directly</h2>
+			<p>Have Questions, Need More Information, or Just Want to Say "Hi"?</p>
+			<a href="../bioContact/bioContactPage.html#contact-form">Contact Me Here!</a>
+		</section>
 		
 	</main>
 
-    <footer>
-        <p>&copy; HannahMacPhotography</p>
-        <div id="social-media-icons">
-            <a class="socialmedia" target="_blank" href="https://www.facebook.com/hannies.hobby/"><img class="icon" src="../images/facebook-3-transparent-dkgray.png" alt="facebook"></a>
-            <a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/facebook-like-2-transparent-dkgray.png" alt="facebook-like"></a>
-            <a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/twitter-4-transparent-dkgray.png" alt="twitter"></a>
-            <a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/instagram-3-transparent-dkgray.png" alt="instagram"></a>
-            <a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/pinterest-3-transparent-dkgray.png" alt="pinterest"></a>
-            <a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/linkedin-2-transparent-dkgray.png" alt="linkedin"></a>
-            <a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/share-3-transparent-dkgray.png" alt="share-this"></a>
-        </div>
-    </footer>
 
+
+	<footer>
+		<p>&copy; HannahMacPhotography</p>
+		<div id="social-media-icons">
+			<a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/facebook-3-transparent-dkgray.png" alt="facebook"></a>
+			<a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/facebook-like-2-transparent-dkgray.png" alt="facebook-like"></a>
+			<a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/twitter-4-transparent-dkgray.png" alt="twitter"></a>
+			<a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/instagram-3-transparent-dkgray.png" alt="instagram"></a>
+			<a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/pinterest-3-transparent-dkgray.png" alt="pinterest"></a>
+			<a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/linkedin-2-transparent-dkgray.png" alt="linkedin"></a>
+			<a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/share-3-transparent-dkgray.png" alt="share-this"></a>
+		</div>
+	</footer>
 	<!-- global scripts -->
 	<script src="../scripts/hamburger.js"></script>
-	<script src="../scripts/reservation-calendar.js"></script>
-
-	<!--<script src="../scripts/forecast.js"></script>-->
-	<!--<script src="../scripts/weather.js"></script>-->
-
+	
+	<!-- local scripts -->
+	<script src="../scripts/currentdate.js"></script>
+	<script src="../scripts/windchill.js"></script>
+	<script src="../scripts/weather.js"></script>
+	<script src="../scripts/forecast.js"></script>
+	<script src="../scripts/calendar.js"></script>
+	<script src="../scripts/use-this-one-calendar.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,10 @@
+# working/test files
+*.obsolete
+*.wking
+
+#dev-cit261
+dev-cit261
+
+# Logs
+logs
+*.log

@@ -3,6 +3,7 @@ html {
     -ms-text-size-adjust: 100%;
 }
 
+
 * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -24,8 +25,10 @@ header {
     flex-wrap: wrap;
     justify-content: flex-start;
 }
+
+
 header img{
-    width:100%;
+    max-width: 100%;
 }
 
 /*-----------NAVAGATION----------------*/
@@ -69,8 +72,10 @@ nav ul li.active a {
     color: white;
 }
 
+
 nav ul.hide {
-    display: none;
+    /*display: none;*/
+	width: 100%;
 }
 
 
@@ -89,21 +94,15 @@ main {
 
 h2 {
     color: #70548b;
+	margin: 0px;
+
 }
 
 p {
     color: #45342a;
+	margin: 10px
 }
 
-
-/*---------------------------------*/
-
-hr {
-    clear: both;
-}
-
-
-/*------------BODY--------------------*/
 
 
 
