@@ -10,7 +10,7 @@ document.getElementById('photoMenu').addEventListener('click', openMenu);
 
 // defining the open menu function
 function openMenu(event) {
-   if (!event.target.querySelector('li')) {
+   if (event.target.querySelector('li')) {
       console.log('Clicked a list Item');
       return;
    } else {
