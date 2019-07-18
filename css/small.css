@@ -73,26 +73,17 @@ nav ul.hide {
     display: none;
 }
 
-.primaryNav > li {
-    display: inline-block;
-    position: relative;
-}
-
 #photoDropDown {
     display: none;
-    position: absolute;
     width: 100%;
     z-index: 1;
     text-align: center;
     left: 0;
-}
-
-#photoDropDown li {
-    padding: 10px 15px;
+    background-color: #aaa;
 }
 
 #photoDropDown.active {
-    display: block;
+    display: flex;
 }
 
 /*-------------MAIN--------------------*/
