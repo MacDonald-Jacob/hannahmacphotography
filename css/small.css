@@ -83,7 +83,7 @@ nav ul.hide {
 }
 
 #photoDropDown.active {
-    display: flex;
+    display: block;
 }
 
 /*-------------MAIN--------------------*/

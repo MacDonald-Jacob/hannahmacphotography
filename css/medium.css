@@ -27,6 +27,6 @@
   }
   
   #photoDropDown.active {
-      display: flex;
-  }
+   display: block;
+}
 }
