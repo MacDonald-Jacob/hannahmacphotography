@@ -78,6 +78,39 @@ nav ul.hide {
 	width: 100%;
 }
 
+#photoMenu {
+    display: block;
+    color: black;
+    padding: .8rem 2%;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.3)
+}
+
+#photoMenu:hover {
+    background-color: #86619d;
+    color: white;
+}
+
+#photoMenu.active {
+    background-color: #789d61;
+    color: white;
+}
+
+
+#photoDropDown {
+    display: none;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    left: 0;
+    background-color: #aaa;
+}
+
+#photoDropDown.active {
+    display: block;
+}
 
 /*-------------MAIN--------------------*/
 
