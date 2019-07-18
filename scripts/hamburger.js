@@ -10,14 +10,7 @@ document.getElementById('photoMenu').addEventListener('click', openMenu);
 
 // defining the open menu function
 function openMenu(event) {
-   if (event.target.querySelector('li')) {
-      console.log('Clicked a list Item');
-      return;
-   } else {
-      console.log('Clicked the Photography menu');
-      event.preventDefault();
-      document.getElementById('photoDropDown').classList.toggle('active');
-   }
+   document.getElementById('photoDropDown').classList.toggle('active');
 }
 
 // this is for putting the nav bar in each page
