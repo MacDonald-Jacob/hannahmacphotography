@@ -1,21 +1,41 @@
  /* 35em is also 560px (if basefont is 16px) */
-@media only screen and (min-width: 35rem) {
+ @media only screen and (min-width: 35rem) {
 
-/*----------- HEADER -----------------*/
-header img{ width: 403px;}
-
-/*----------- NAVIGATION --------------*/ 
-
-nav button { display:none;}
-nav ul.hide { display: block;}
-nav ul {margin-left: 1%;}
-nav ul li { float: left;}
-
-nav ul li a {
-    padding: .8rem .5rem;
-    border: none;
-    border-right: 1px solid black;
-}
-
-
-}
+   /*----------- HEADER -----------------*/
+   header img{ width: 403px;}
+   
+   /*----------- NAVIGATION --------------*/ 
+   
+   nav button { display:none;}
+   nav ul.hide { display: block;}
+   nav ul {margin-left: 1%;}
+   nav ul li { float: left;}
+   
+   nav ul li a {
+       padding: .8rem .5rem;
+       border: none;
+       border-right: 1px solid black;
+   }
+   
+   .primaryNav > li {
+      display: inline-block;
+      position: relative;
+   }
+   
+   #photoDropDown {
+      display: none;
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+      text-align: center;
+      left: 0;
+   }
+   
+   #photoDropDown li {
+      padding: 10px 15px;
+   }
+   
+   #photoDropDown.active {
+      display: block;
+   }
+   }
