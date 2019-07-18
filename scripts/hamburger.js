@@ -10,6 +10,7 @@ document.getElementById('photoMenu').addEventListener('click', openMenu);
 
 // defining the open menu function
 function openMenu(event) {
+   console.log('Attempting to click Photography nav link');
    event.preventDefault();
    document.getElementById('photoDropDown').classList.toggle('active');
 }
