@@ -8,35 +8,13 @@
     
     
     /*----------- NAVIGATION --------------*/
-    nav {
+   /* nav {
         display: flex;
         height:35px;
     }
     nav ul li a{
         padding: .5rem 1rem;
     }
-    
-    #photoMenu {
-        padding: .5rem 1rem;
-    }
-    
-    /* .primaryNav > li {
-        display: inline-block;
-        position: relative;
-    } */
-    
-    #photoDropDown {
-        display: none;
-        width: 100%;
-        z-index: 1;
-        text-align: center;
-        left: 0;
-        background-color: #aaa;
-    }
-    
-    #photoDropDown.active {
-        display: block;
-    }
-    
-}   
+    */
+}  
         

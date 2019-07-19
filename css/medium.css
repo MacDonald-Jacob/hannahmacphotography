@@ -6,7 +6,7 @@
    
    /*----------- NAVIGATION --------------*/ 
    
-   nav button { display:none;}
+  /*nav button { display:none;}
    nav ul.hide { display: block;}
    nav ul {margin-left: 1%;}
    nav ul li { float: left;}
@@ -16,23 +16,5 @@
        border: none;
        border-right: 1px solid black;
    }
-
-   #photoMenu {
-      padding: .8rem .5rem;
-      border: none;
-      border-right: 1px solid black;
-  }
-   
-   #photoDropDown {
-      display: none;
-      width: 100%;
-      z-index: 1;
-      text-align: center;
-      left: 0;
-      background-color: #aaa;
-  }
-  
-  #photoDropDown.active {
-   display: block;
-}
+*/
 }
