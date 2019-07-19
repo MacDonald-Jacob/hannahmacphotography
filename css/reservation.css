@@ -5,6 +5,8 @@ Uses Local Storage method to save events locally
 */
 
 
+/*************************************/
+
 .contact-bookmark {
 	text-decoration: underline;
 }
@@ -12,7 +14,7 @@ Uses Local Storage method to save events locally
 #section-intro,
 #reservation-calendar,
 #forecast-container,
- {
+{
 	margin: 50px;
 }
 

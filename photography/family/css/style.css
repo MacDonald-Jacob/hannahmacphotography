@@ -1,0 +1,54 @@
+#img1 {
+    margin-right:10px;
+    margin-bottom: 10px;
+    transition: opacity 1.0s linear 0s;
+    animation-duration: 4s;
+    animation-name: slide1;
+ }
+ 
+ #img2 {
+     margin-bottom:10px;
+    transition: opacity 1.0s linear 0s;
+    animation-duration: 2s;
+    animation-name: slide2;
+ }
+ 
+ #img3 {
+    margin-right:10px;
+    transition: opacity 0.5s linear 0s;
+    animation-duration: 5s;
+    animation-name: slide3;
+  }
+
+  @keyframes slide2 {
+    from {
+       margin-left: -50rem;
+    }
+    to {
+       margin-left: 0%;
+    }
+  }
+ 
+  @keyframes slide1 {
+    from {
+        margin-bottom: -50rem;
+        margin-right: -50rem;
+    }
+  
+    to {
+        margin-bottom:0%;
+        margin-right: 0%;
+    }
+  }
+  
+ 
+  @keyframes slide3 {
+    from {
+        margin-top: -5rem;
+        margin-left: 50rem;
+    }
+    to {
+        margin-bottom: 0%;
+        margin-left: 0%
+    }
+  }
