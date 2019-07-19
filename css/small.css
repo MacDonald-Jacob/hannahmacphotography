@@ -30,82 +30,6 @@ header img{
 
 /*-----------NAVAGATION----------------*/
 
-/*nav button {
-    margin: .2rem 2%;
-    background-color: transparent;
-    border: none;
-    font-size: 1.6rem;
-    color: black;
-}
-
-nav {
-    overflow: auto;
-    background-color: #dcd9d9;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li a {
-    display: block;
-    color: black;
-    padding: .8rem 2%;
-    text-decoration: none;
-    font-size: 1rem;
-    text-align: center;
-    border-top: 1px solid rgba(0, 0, 0, 0.3)
-}
-
-nav ul li a:hover {
-    background-color: #86619d;
-    color: white;
-}
-
-nav ul li.active a {
-    background-color: #789d61;
-    color: white;
-}
-
-#photoMenu {
-    display: block;
-    color: black;
-    padding: .8rem 2%;
-    text-decoration: none;
-    font-size: 1rem;
-    text-align: center;
-    border-top: 1px solid rgba(0, 0, 0, 0.3)
-}
-
-#photoMenu:hover {
-    background-color: #86619d;
-    color: white;
-}
-
-#photoMenu.active {
-    background-color: #789d61;
-    color: white;
-}
-
-nav ul.hide {
-    display: none;
-}
-
-#photoDropDown {
-    display: none;
-    width: 100%;
-    z-index: 1;
-    text-align: center;
-    left: 0;
-    background-color: #aaa;
-}
-
-#photoDropDown.active {
-    display: block;
-}
-*/
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #dcd9d9;
@@ -125,7 +49,7 @@ nav ul.hide {
   
   /* Add an active class to highlight the current page */
   .active {
-    background-color: #4CAF50;
+    background-color: #789d61;
     color: white;
   }
   
@@ -145,7 +69,7 @@ nav ul.hide {
     font-size: 17px; 
     border: none;
     outline: none;
-    color: white;
+    color:black;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -170,11 +94,13 @@ nav ul.hide {
     text-decoration: none;
     display: block;
     text-align: left;
+    border-top: 1px solid rgba(0, 0, 0, 0.3)
+
   }
   
   /* Add a dark background on topnav links and the dropdown button on hover */
   .topnav a:hover, .dropdown:hover .dropbtn {
-    background-color: #555;
+    background-color:#86619d;
     color: white;
   }
   

@@ -31,52 +31,27 @@
 	</header>
 
 	<nav>
-		<button onclick="toggleMenu()">&#9776;</button>
-		<ul id="primaryNav" class="hide">
-			<li><a href="../index.html">Home</a></li>
-			<li id="photoMenu">
-				Photography
-				<ul id="photoDropDown">
-					<li>
-						<a href="../photography/birthAndMaternity/"
-							>Birth & Maternity</a
-						>
-					</li>
-					<li>
-						<a href="../photography/bridals/bridalsPage.html"
-							>Bridals</a
-						>
-					</li>
-					<li>
-						<a href="../photography/engagements/engagementsPage.html"
-							>Engagements</a
-						>
-					</li>
-					<li>
-						<a href="../photography/family/familyPage.html">Family</a>
-					</li>
-					<li>
-						<a href="../photography/firstLook/firstLookPage.html"
-							>First Look</a
-						>
-					</li>
-					<li>
-						<a
-							href="../photography/productPhotography/productPhotographyPage.html"
-							>Prouct Photography</a
-						>
-					</li>
-					<li>
-						<a href="../photography/weddingDay/weddingDayPage.html"
-							>Wedding Day</a
-						>
-					</li>
-				</ul>
-			</li>
-			<li><a href="../videography/videographyPage.html">Videography</a></li>
-			<li class="active"><a href="reservation/reservationPage.html">Reservations</a></li>
-			<li><a href="../bioContact/bioContactPage.html">Bio & Contact Page</a></li>
-		</ul>
+		<div class="topnav" id="myTopnav">
+            <a href="../index.html">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">Photography
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="../photography/weddingDay/weddingDayPage.html">Wedding Day</a>
+                <a href="../photography/bridals/bridalsPage.html">Bridals</a>
+                <a href="../photography/engagements/engagementsPage.html">Engagements</a>
+                <a href="../photography/firstLook/firstLookPage.html">First Look</a>
+                <a href="../photography/birthAndMaternity/">Birth and Maternity</a>
+                <a href="../photography/family/familyPage.html">Family</a>
+                <a href="../photography/productPhotography/productPhotographyPage.html">Product Photography</a>
+              </div>
+            </div> 
+            <a href="../videography/videographyPage.html">Videography</a>
+            <a href="../reservation/reservationPage.html" class="active">Reservations</a>
+            <a href="../bioContact/bioContactPage.html">Bio and Contact</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
 	</nav>
 
 	<main>
@@ -225,7 +200,7 @@
 	</footer>
 
 	<!-- global scripts -->
-	<script src="../scripts/hamburger.js"></script>
+	<script src="../scripts/dropDownMenu.js"></script>
 	<script src="../scripts/reservation-calendar.js"></script>
 
 	<!--<script src="../scripts/forecast.js"></script>-->
