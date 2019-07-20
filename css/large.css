@@ -1,22 +1,13 @@
 /* 64em is also 1028px (if basefont is 16px) */
 @media only screen and (min-width: 64rem) {
 
-header, nav, main, footer{
-    max-width:100%;
-    margin:auto;
-}
+    header, nav, main, footer{
+        max-width:100%;
+        margin:auto;
+    }
+    
+    
+    /*----------- NAVIGATION --------------*/
 
-
-/*----------- NAVIGATION --------------*/
-nav {
-    height:35px;
-    
-}
-nav ul li a{
-    padding: .5rem 1rem;
-}
-    
-      
-    
-}   
-    
+}  
+        

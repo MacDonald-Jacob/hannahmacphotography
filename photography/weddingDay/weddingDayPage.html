@@ -34,22 +34,27 @@
       </header>
 
       <nav>
-         <button onclick="toggleMenu()">&#9776;</button>
-         <ul id="primaryNav" class="hide">
-            <li><a href="../../index.html">Home</a></li>
-            <li><a href="">Photography</a></li>
-            <li>
-               <a href="../../videography/videographyPage.html">Videography</a>
-            </li>
-            <li>
-               <a href="../../reservation/reservationPage.html">Reservations</a>
-            </li>
-            <li>
-               <a href="../../bioContact/bioContactPage.html"
-                  >Bio & Contact Page</a
-               >
-            </li>
-         </ul>
+         <div class="topnav" id="myTopnav">
+            <a href="../../index.html">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">Photography
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="../../photography/weddingDay/weddingDayPage.html" class="active">Wedding Day</a>
+                <a href="../../photography/bridals/bridalsPage.html">Bridals</a>
+                <a href="../../photography/engagements/engagementsPage.html">Engagements</a>
+                <a href="../../photography/firstLook/firstLookPage.html">First Look</a>
+                <a href="../../photography/birthAndMaternity/Birth&Maternity.html">Birth and Maternity</a>
+                <a href="../../photography/family/familyPage.html">Family</a>
+                <a href="../../photography/productPhotography/productPhotographyPage.html">Product Photography</a>
+              </div>
+            </div> 
+            <a href="../../videography/videographyPage.html">Videography</a>
+            <a href="../../reservation/reservationPage.html">Reservations</a>
+            <a href="../../bioContact/bioContactPage.html">Bio and Contact</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
       </nav>
 
       <main>
@@ -78,19 +83,54 @@
          </div>
       </main>
 
-    <footer>
-        <p>&copy; HannahMacPhotography</p>
-        <div id="social-media-icons">
-
-            <a class="socialmedia" target="_blank" href="https://www.facebook.com/hannies.hobby/"><img class="icon" src="../images/facebook-3-transparent-dkgray.png" alt="facebook"></a>
-            <a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/facebook-like-2-transparent-dkgray.png" alt="facebook-like"></a>
-            <a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/twitter-4-transparent-dkgray.png" alt="twitter"></a>
-            <a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/instagram-3-transparent-dkgray.png" alt="instagram"></a>
-            <a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/pinterest-3-transparent-dkgray.png" alt="pinterest"></a>
-            <a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/linkedin-2-transparent-dkgray.png" alt="linkedin"></a>
-            <a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/share-3-transparent-dkgray.png" alt="share-this"></a>
-        </div>
-    </footer>
-      <script src="../../scripts/hamburger.js"></script>
+      <footer>
+         <p>&copy; HannahMacPhotography</p>
+         <div id="social-media-icons">
+               <a class="socialmedia" target="_blank" href="https://www.facebook.com/hannies.hobby/">
+                  <img
+                   class="icon" 
+                   src="../../images/facebook-3-transparent-dkgray.png"
+                   alt="facebook"/>
+               </a>
+               <a class="socialmedia" target="_blank" href="#">
+                  <img 
+                  class="icon" 
+                  src="../../images/facebook-like-2-transparent-dkgray.png" 
+                  alt="facebook-like"/>
+               </a>
+               <a class="socialmedia" target="_blank" href="#">
+                  <img 
+                  class="icon"
+                  src="../../images/twitter-4-transparent-dkgray.png"
+                  alt="twitter"/>
+               </a>
+               <a class="socialmedia" target="_blank" href="#">
+                  <img
+                  class="icon"
+                  src="../../images/instagram-3-transparent-dkgray.png"
+                  alt="instagram"/>
+               </a>
+               <a class="socialmedia" target="_blank" href="#">
+                  <img
+                  class="icon"
+                  src="../../images/pinterest-3-transparent-dkgray.png"
+                  alt="pinterest"/>
+               </a>
+               <a class="socialmedia" target="_blank" href="#">
+                  <img
+                  class="icon"
+                  src="../../images/linkedin-2-transparent-dkgray.png"
+                  alt="linkedin"/>
+               </a>
+               <a class="socialmedia" target="_blank" href="#">
+                  <img
+                  class="icon"
+                  src="../../images/share-3-transparent-dkgray.png"
+                  alt="share-this"/>
+               </a>
+            </div>
+      </footer>
+      <script src="../../scripts/dropDownMenu.js"></script>
+      <script src="scripts/flyIn.js"></script>
    </body>
 </html>
