@@ -38,7 +38,7 @@ Uses Local Storage method to save events locally
 }
 
 #calendar {
-	max-width: 100%;
+	width: 50%;
 }
 
 #cal-container,
