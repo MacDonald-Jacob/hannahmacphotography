@@ -102,13 +102,19 @@
             >
                <div id="form-container">
                   Name:<br />
-                  <input type="text" name="Name" placeholder=" your name " />
+                  <input
+                     id="name"
+                     type="text"
+                     name="Name"
+                     placeholder=" your name "
+                  />
                   <br />
                   <br />
                   E-mail:
                   <br />
                   <input
-                     type="text"
+                     type="email"
+                     id="email"
                      name="E-mail"
                      placeholder=" your email "
                   /><br />
@@ -230,7 +236,7 @@
                   </div>
 
                   Comments:<br />
-                  <textarea name="Comments"></textarea>
+                  <textarea id="comments" name="Comments"></textarea>
                   <br />
 
                   <input type="submit" value="Send" onclick="storeUserData()" />
