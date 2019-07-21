@@ -3,205 +3,207 @@
 
 
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
 
-	<meta name="description" content="CIT 261 Final Project_Group 5">
-	<meta name="author" content="Kimberly Llanos, Jacob MacDonald, Austin, Kincade">
+    <meta name="description" content="CIT 261 Final Project_Group 5">
+    <meta name="author" content="Kimberly Llanos, Jacob MacDonald, Austin, Kincade">
 
 
-	<title>Reservation: HannahMacPhotography</title>
+    <title>Reservation: HannahMacPhotography</title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link href="../css/normalize.css" rel="stylesheet">
-	<link href="../css/large.css" rel="stylesheet">
-	<link href="../css/medium.css" rel="stylesheet">
-	<link href="../css/reservation-small.css" rel="stylesheet">
-	<!--<link href="../css/small.css" rel="stylesheet">-->
-	<link href="../css/reservation.css" rel="stylesheet">
-	<!--<link href="../css/five-day-forecast.css" rel="stylesheet">--
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="../css/normalize.css" rel="stylesheet">
+    <link href="../css/large.css" rel="stylesheet">
+    <link href="../css/medium.css" rel="stylesheet">
+    <link href="../css/reservation-small.css" rel="stylesheet">
+    <!--<link href="../css/small.css" rel="stylesheet">-->
+    <link href="../css/reservation.css" rel="stylesheet">
+    <!--<link href="../css/five-day-forecast.css" rel="stylesheet">--
 
 	<!-- import Google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
 </head>
 
 <body>
-	<header>
-		<img src="../images/logo.png" alt="logo">
-	</header>
+    <header>
+        <img src="../images/logo.png" alt="logo">
+    </header>
 
-	<nav>
-		<div class="topnav" id="myTopnav">
+    <nav>
+        <div class="topnav" id="myTopnav">
             <a href="../index.html">Home</a>
             <div class="dropdown">
-              <button class="dropbtn">Photography
+                <button class="dropbtn">Photography
                 <i class="fa fa-caret-down"></i>
               </button>
-              <div class="dropdown-content">
-                <a href="../photography/weddingDay/weddingDayPage.html">Wedding Day</a>
-                <a href="../photography/bridals/bridalsPage.html">Bridals</a>
-                <a href="../photography/engagements/engagementsPage.html">Engagements</a>
-                <a href="../photography/firstLook/firstLookPage.html">First Look</a>
-                <a href="../photography/birthAndMaternity/Birth&Maternity.html">Birth and Maternity</a>
-                <a href="../photography/family/familyPage.html">Family</a>
-                <a href="../photography/productPhotography/productPhotographyPage.html">Product Photography</a>
-              </div>
-            </div> 
+                <div class="dropdown-content">
+                    <a href="../photography/weddingDay/weddingDayPage.html">Wedding Day</a>
+                    <a href="../photography/bridals/bridalsPage.html">Bridals</a>
+                    <a href="../photography/engagements/engagementsPage.html">Engagements</a>
+                    <a href="../photography/firstLook/firstLookPage.html">First Look</a>
+                    <a href="../photography/birthAndMaternity/Birth&Maternity.html">Birth and Maternity</a>
+                    <a href="../photography/family/familyPage.html">Family</a>
+                    <a href="../photography/productPhotography/productPhotographyPage.html">Product Photography</a>
+                </div>
+            </div>
             <a href="../videography/videographyPage.html">Videography</a>
             <a href="../reservation/reservationPage.html" class="active">Reservations</a>
             <a href="../bioContact/bioContactPage.html">Bio and Contact</a>
             <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-          </div>
-	</nav>
+        </div>
+    </nav>
 
-	<main>
+    <main>
 
-		<section id="section-intro">
-			<h2>My Availability Calendar</h2>
-			<p>Please let me know what dates and times you are interested in and then fill out
-				<a class="contact-bookmark" href="../bioContact/bioContactPage.html#contact-form">this form</a> to contact me directly.
-				<br><br> I will contact you within 24 hours ~ please be sure to let me know if you prefer me to email, call, or text you!
-				<br><br> In case you are looking to book a photograpy or videography session with me sooner rather than later, below is a 5-day forecast to give you an idea of what the weather will be like beginning with today's weather.
-				<br>
-			</p>
-		</section>
+        <section id="section-intro">
+            <h2>My Availability Calendar</h2>
+            <p>Please let me know what dates and times you are interested in and then fill out
+                <a class="contact-bookmark" href="../bioContact/bioContactPage.html#contact-form">this form</a> to contact me directly.
+                <br><br> I will contact you within 24 hours ~ please be sure to let me know if you prefer me to email, call, or text you!
+                <br><br> In case you are looking to book a photograpy or videography session with me sooner rather than later, below is a 5-day forecast to give you an idea of what the weather will be like beginning with today's weather.
+                <br>
+            </p>
+        </section>
+
+        <section id="reservation-calendar">
+            <div class="w3-container">
+                <!-- calendar [date] selector -->
+                <div id="cal-date">
+                    <select id="cal-mth"></select>
+                    <select id="cal-yr"></select>
+                    <input id="cal-set" type="button" value="SET" />
+                </div>
+
+                <!-- calendar container -->
+                <div id="cal-container"></div>
+
+                <!-- calendar event -->
+                <div id="cal-event"></div>
+            </div>
+        </section>
 
 
-		<section id="reservation-calendar">
-			<div class="w3-container">
-				<!-- calendar [date] selector -->
-				<div id="cal-date">
-					<select id="cal-mth"></select>
-					<select id="cal-yr"></select>
-					<input id="cal-set" type="button" value="SET" />
-				</div>
+        <section id="forecast-container">
+            <h2>Five Day Forecast</h2>
+            <div id="current-conditions-container">
+                <div class="text-block">
+                    <h3>Current Conditions</h3>
+                    <p>Currently: <span id="sky">currently</span></p>
+                    <p>Temperature: <span id="temp">temp</span>°</p>
+                    <p>Humidity: <span id="humidity">humidity</span>%</p>
+                    <p>Wind: <span id="windSpeed"></span>mph</p>
+                    <p>Feels like: <span id="windChill"></span>°</p>
+                </div>
+                <hr>
+                <br>
+            </div>
 
-				<!-- calendar container -->
-				<div id="cal-container"></div>
+            <div id="five-day-container">
+                <table class="b">
+                    <thead id="table">
+                        <tr>
+                            <th scope="col">Day 1</th>
+                            <th scope="col">Day 2</th>
+                            <th scope="col">Day 3</th>
+                            <th scope="col">Day 4</th>
+                            <th scope="col">Day 5</th>
+                        </tr>
+                    </thead>
 
-				<!-- calendar event -->
-				<div id="cal-event"></div>
-			</div>
-		</section>
+                    <tbody>
+                        <tr>
+                            <td class="icon"><img src="images/placeholder.png" alt="current weather" id="weather_icon1"></td>
+                            <td class="icon"><img src="images/placeholder.png" alt="current weather" id="weather_icon2"></td>
+                            <td class="icon"><img src="images/placeholder.png" alt="current weather" id="weather_icon3"></td>
+                            <td class="icon"><img src="images/placeholder.png" alt="current weather" id="weather_icon4"></td>
+                            <td class="icon"><img src="images/placeholder.png" alt="current weather" id="weather_icon5"></td>
+                        </tr>
+                        <tr>
+                            <td class="desc"><span id="description1"></span></td>
+                            <td class="desc"><span id="description2"></span></td>
+                            <td class="desc"><span id="description3"></span></td>
+                            <td class="desc"><span id="description4"></span></td>
+                            <td class="desc"><span id="description5"></span></td>
+                        </tr>
+                        <tr>
+                            <td>High: <span id="high1"></span>°</td>
+                            <td>High: <span id="high2"></span>°</td>
+                            <td>High: <span id="high3"></span>°</td>
+                            <td>High: <span id="high4"></span>°</td>
+                            <td>High: <span id="high5"></span>°</td>
+                        </tr>
+                        <tr>
+                            <td class="low">Low: <span id="low1"></span>°</td>
+                            <td class="low">Low: <span id="low2"></span>°</td>
+                            <td class="low">Low: <span id="low3"></span>°</td>
+                            <td class="low">Low: <span id="low4"></span>°</td>
+                            <td class="low">Low: <span id="low5"></span>°</td>
+                        </tr>
+                        <tr>
+                            <td>Wind: <span id="wind1"></span> mph</td>
+                            <td>Wind: <span id="wind2"></span> mph</td>
+                            <td>Wind: <span id="wind3"></span> mph</td>
+                            <td>Wind: <span id="wind4"></span> mph</td>
+                            <td>Wind: <span id="wind5"></span> mph</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
+        <section id="testmonials">
+            <h2> Recent Client Reviews</h2>
+            <h3>Photography</h3>
+            <p class="testimonials">
+                <span class="italic-testimonials">“HANNAH IS AMAZING! We will never go to another photographer. she is so fun and creative. she makes you feel so special and beautiful too. she is so fun to be around and makes you laugh. she is an INCREDIBLE photographer. we have loved all the work she has done for us. we have never been disappointed and have done multiple shoots with us. she is truly amazing at what she does!”</span>
+                <br>~Courtney p.
+                <br>Jun 6, 2019</p>
+            <br>
+            <h3>Engagement Photography | Wedding Photography & Videography</h3>
+            <p class="testimonials">
+                <span class="italic-testimonials">“Hannah took our engagement pictures and bridals as well as filmed a video we are lucky enough to look back at for forever! She is so easy to work with and so outgoing that it doesn’t make you feel awkward being so passionate while taking pictures! also, her picture quality is AMAZING, as well as her edits. and i’m super picky so that says a lot. we will definitely be going back to hannah for more family pictures in the future! 10/10 recommend she’s the best!”</span>
+                <br>~ Annie W.
+                <br>May 27, 2019</p>
+            <br>
+            <br>
+            <h3>Wedding Photography</h3>
+            <p class="testimonials">
+                <span class="italic-testimonials">“Hannah was AMAZING to work with! I loved that she was so engaged the whole shoot. She was super outgoing and made the shoot fun. We took our bridals with her and they look stunning. She was easy to work with and she knows her stuff! I would highly recommend booking her😊”</span>
+                <br>~Emilie V.
+                <br>Mar 20, 2019</p>
+            <br>
+            <br>
+            <h3>Family Portrait Photography</h3>
+            <p class="testimonials">
+                <span class="italic-testimonials">“We just finished a large family shoot with Hannah and were more than impressed! She was easy to work with and especially good with the little ones we had. We had a couple of edited proofs within the hour. I would highly recommend Hannah to anyone looking for a photographer!”</span>
+                <br>~ Shauna H.
+                <br>Dec 28, 2017</p>
+            <br>
+            <br>
+        </section>
 
-		<section id="forecast-container">
-			<h2>Five Day Forecast</h2>
-			<div id="current-conditions-container">
-				<div class="text-block">
-					<h3>Current Conditions</h3>
-					<p>Currently: <span id="sky">currently</span></p>
-					<p>Temperature: <span id="temp">temp</span>°</p>
-					<p>Humidity: <span id="humidity">humidity</span>%</p>
-					<p>Wind: <span id="windSpeed"></span>mph</p>
-					<p>Feels like: <span id="windChill"></span>°</p>
-				</div>
-				<hr>
-				<br>
-			</div>
+    </main>
 
-			<div id="five-day-container">
-				<table class="b">
-					<thead id="table">
-						<tr>
-							<th scope="col">Day 1</th>
-							<th scope="col">Day 2</th>
-							<th scope="col">Day 3</th>
-							<th scope="col">Day 4</th>
-							<th scope="col">Day 5</th>
-						</tr>
-					</thead>
-
-					<tbody>
-						<tr>
-							<td class="icon"><img src="images/placeholder.png" alt="current weather" id="weather_icon1"></td>
-							<td class="icon"><img src="images/placeholder.png" alt="current weather" id="weather_icon2"></td>
-							<td class="icon"><img src="images/placeholder.png" alt="current weather" id="weather_icon3"></td>
-							<td class="icon"><img src="images/placeholder.png" alt="current weather" id="weather_icon4"></td>
-							<td class="icon"><img src="images/placeholder.png" alt="current weather" id="weather_icon5"></td>
-						</tr>
-						<tr>
-							<td class="desc"><span id="description1"></span></td>
-							<td class="desc"><span id="description2"></span></td>
-							<td class="desc"><span id="description3"></span></td>
-							<td class="desc"><span id="description4"></span></td>
-							<td class="desc"><span id="description5"></span></td>
-						</tr>
-						<tr>
-							<td>High: <span id="high1"></span>°</td>
-							<td>High: <span id="high2"></span>°</td>
-							<td>High: <span id="high3"></span>°</td>
-							<td>High: <span id="high4"></span>°</td>
-							<td>High: <span id="high5"></span>°</td>
-						</tr>
-						<tr>
-							<td class="low">Low: <span id="low1"></span>°</td>
-							<td class="low">Low: <span id="low2"></span>°</td>
-							<td class="low">Low: <span id="low3"></span>°</td>
-							<td class="low">Low: <span id="low4"></span>°</td>
-							<td class="low">Low: <span id="low5"></span>°</td>
-						</tr>
-						<tr>
-							<td>Wind: <span id="wind1"></span> mph</td>
-							<td>Wind: <span id="wind2"></span> mph</td>
-							<td>Wind: <span id="wind3"></span> mph</td>
-							<td>Wind: <span id="wind4"></span> mph</td>
-							<td>Wind: <span id="wind5"></span> mph</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</section>
-
-		<section id="testmonials">
-			<h2> Recent Client Reviews</h2>
-			<h3>Photography</h3>
-			<p class="testimonials">
-				<span class="italic-testimonials">“HANNAH IS AMAZING! We will never go to another photographer. she is so fun and creative. she makes you feel so special and beautiful too. she is so fun to be around and makes you laugh. she is an INCREDIBLE photographer. we have loved all the work she has done for us. we have never been disappointed and have done multiple shoots with us. she is truly amazing at what she does!”</span>
-				<br>~Courtney p. 
-				<br>Jun 6, 2019</p>
-			<br>
-			<h3>Engagement Photography | Wedding Photography & Videography</h3>
-			<p class="testimonials">
-				<span class="italic-testimonials">“Hannah took our engagement pictures and bridals as well as filmed a video we are lucky enough to look back at for forever! She is so easy to work with and so outgoing that it doesn’t make you feel awkward being so passionate while taking pictures! also, her picture quality is AMAZING, as well as her edits. and i’m super picky so that says a lot. we will definitely be going back to hannah for more family pictures in the future! 10/10 recommend she’s the best!”</span>
-				<br>~ Annie W. 
-				<br>May 27, 2019</p>
-			<br>
-			<br>
-			<h3>Wedding Photography</h3>
-			<p class="testimonials">
-				<span class="italic-testimonials">“Hannah was AMAZING to work with! I loved that she was so engaged the whole shoot. She was super outgoing and made the shoot fun. We took our bridals with her and they look stunning. She was easy to work with and she knows her stuff! I would highly recommend booking her😊”</span>
-				<br>~Emilie V. 
-				<br>Mar 20, 2019</p>
-			<br>
-			<br>
-						<h3>Family Portrait Photography</h3>
-			<p class="testimonials">
-				<span class="italic-testimonials">“We just finished a large family shoot with Hannah and were more than impressed! She was easy to work with and especially good with the little ones we had. We had a couple of edited proofs within the hour. I would highly recommend Hannah to anyone looking for a photographer!”</span>
-				<br>~ Shauna H.
-				<br>Dec 28, 2017</p>
-			<br>
-			<br>
-		</section>
-
-	</main>
-
-	<footer>
-		<p>&copy; HannahMacPhotography</p>
+    <footer>
+        <p>&copy; HannahMacPhotography</p>
         <div id="social-media-icons">
             <a class="socialmedia" target="_blank" href="https://www.facebook.com/hannies.hobby/"><img class="icon" src="../images/facebook-3-transparent-dkgray.png" alt="facebook"></a>
-            <a class="socialmedia" target="_blank" href="https://www.instagram.com/hannahmacphotography/"><img class="icon" src="../images/instagram-3-transparent-dkgray.png" alt="instagram"></a>
-            <a class="socialmedia" target="_blank" href="https://www.pinterest.com/hannahmacphotographygmailcom/boards/"><img class="icon" src="../images/pinterest-3-transparent-dkgray.png" alt="pinterest"></a>
+            <a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/facebook-like-2-transparent-dkgray.png" alt="facebook-like"></a>
+            <a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/instagram-3-transparent-dkgray.png" alt="instagram"></a>
+            <a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/pinterest-3-transparent-dkgray.png" alt="pinterest"></a>
+            <a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/linkedin-2-transparent-dkgray.png" alt="linkedin"></a>
+            <a class="socialmedia" target="_blank" href="#"><img class="icon" src="../images/share-3-transparent-dkgray.png" alt="share-this"></a>
         </div>
-	</footer>
+    </footer>
 
-	<!-- global scripts -->
-	<script src="../scripts/dropDownMenu.js"></script>
-	<script src="scripts/script.js"></script>
-	<script src="../scripts/reservation-calendar.js"></script>
+    <!-- global scripts -->
+    <script src="../scripts/dropDownMenu.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="../scripts/reservation-calendar.js"></script>
 
-	<!--<script src="../scripts/forecast.js"></script>-->
-	<!--<script src="../scripts/weather.js"></script>-->
+    <!--<script src="../scripts/forecast.js"></script>-->
+    <!--<script src="../scripts/weather.js"></script>-->
 
 </body>
 
