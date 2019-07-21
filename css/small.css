@@ -181,7 +181,9 @@ hr {
 
 
 /*--------FOOTER-----------------------*/
-
+#footerHome{
+  margin-top: 150px;
+}
 footer {
     background-color: #edecec;
     color: black;

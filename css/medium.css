@@ -5,6 +5,10 @@
    header img{ width: 403px;}
    
    /*----------- NAVIGATION --------------*/ 
-   
+  
+   /*----------- FOOTER ----------------*/
+   #footerHome{
+    margin-top: 550px;
+  }
 
 }
