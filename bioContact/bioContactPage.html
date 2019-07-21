@@ -1,47 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+   <head>
       <link rel="icon" href="../images/tabLogo.png" />
       <link href="../css/normalize.css" rel="stylesheet" />
       <link href="../css/small.css" rel="stylesheet" />
       <link href="../css/medium.css" rel="stylesheet" />
       <link href="../css/large.css" rel="stylesheet" />
       <link href="css/style.css" rel="stylesheet" />
-      <link href="https://fonts.googleapis.com/css?family=Quicksand"/>
+      <link href="https://fonts.googleapis.com/css?family=Quicksand" />
       <link href="https://fonts.googleapis.com/css?family=Parisienne" />
-</head>
+   </head>
 
    <body>
       <header>
          <img src="../images/logo.png" alt="logo" />
       </header>
-<!--new nav - do not delete-->
+      <!--new nav - do not delete-->
       <nav>
          <div class="topnav" id="myTopnav">
             <a href="../index.html">Home</a>
             <div class="dropdown">
-              <button class="dropbtn">Photography
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="../photography/weddingDay/weddingDayPage.html">Wedding Day</a>
-                <a href="../photography/bridals/bridalsPage.html">Bridals</a>
-                <a href="../photography/engagements/engagementsPage.html">Engagements</a>
-                <a href="../photography/firstLook/firstLookPage.html">First Look</a>
-                <a href="../photography/birthAndMaternity/Birth&Maternity.html">Birth and Maternity</a>
-                <a href="../photography/family/familyPage.html">Family</a>
-                <a href="../photography/productPhotography/productPhotographyPage.html">Product Photography</a>
-              </div>
-            </div> 
+               <button class="dropbtn">
+                  Photography
+                  <i class="fa fa-caret-down"></i>
+               </button>
+               <div class="dropdown-content">
+                  <a href="../photography/weddingDay/weddingDayPage.html"
+                     >Wedding Day</a
+                  >
+                  <a href="../photography/bridals/bridalsPage.html">Bridals</a>
+                  <a href="../photography/engagements/engagementsPage.html"
+                     >Engagements</a
+                  >
+                  <a href="../photography/firstLook/firstLookPage.html"
+                     >First Look</a
+                  >
+                  <a
+                     href="../photography/birthAndMaternity/Birth&Maternity.html"
+                     >Birth and Maternity</a
+                  >
+                  <a href="../photography/family/familyPage.html">Family</a>
+                  <a
+                     href="../photography/productPhotography/productPhotographyPage.html"
+                     >Product Photography</a
+                  >
+               </div>
+            </div>
             <a href="../videography/videographyPage.html">Videography</a>
             <a href="../reservation/reservationPage.html">Reservations</a>
-            <a href="../bioContact/bioContactPage.html" class="active">Bio and Contact</a>
-            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-          </div>
+            <a href="../bioContact/bioContactPage.html" class="active"
+               >Bio and Contact</a
+            >
+            <a
+               href="javascript:void(0);"
+               style="font-size:15px;"
+               class="icon"
+               onclick="myFunction()"
+               >&#9776;</a
+            >
+         </div>
       </nav>
       <!-- <div navbar="../nav.html"></div> -->
-      
-      
+
       <main>
          <div class="parallax"></div>
          <div class="words">
@@ -72,78 +92,186 @@
             </p>
          </div>
 
-        <div id="contact-form" name="contact-form">
-           <h2 class="words">Email Contact Form</h2>
-            <form id="form-style" action="mailto:hannah@hannahmacphotography.com" method="post" enctype="text/plain">
-                <div id="form-container">
-                    Name:<br>
-                    <input type="text" name="Name" placeholder=" your name ">
-                    <br>
-                    <br> E-mail:
-                    <br>
-                    <input type="text" name="E-mail" placeholder=" your email "><br>
-                    <br>
-                    <br>
+         <div id="contact-form" name="contact-form">
+            <h2 class="words">Email Contact Form</h2>
+            <form
+               id="form-style"
+               action="mailto:hannah@hannahmacphotography.com"
+               method="post"
+               enctype="text/plain"
+            >
+               <div id="form-container">
+                  Name:<br />
+                  <input type="text" name="Name" placeholder=" your name " />
+                  <br />
+                  <br />
+                  E-mail:
+                  <br />
+                  <input
+                     type="text"
+                     name="E-mail"
+                     placeholder=" your email "
+                  /><br />
+                  <br />
+                  <br />
 
-                    <p>Please select your service type:</p>
-                    <div id="interests-radio-button">
-                        <input type="radio" name="Service-type " value=" photography ">Photography<br>
-                        <input type="radio" name="Service-type " value=" videography ">Videography<br>
-                        <input type="radio" name="Service-type " value=" both ">Both<br>
-                        <br>
-                    </div>
+                  <p>Please select your service type:</p>
+                  <div id="interests-radio-button">
+                     <input
+                        type="radio"
+                        name="Service-type "
+                        value=" photography "
+                     />Photography<br />
+                     <input
+                        type="radio"
+                        name="Service-type "
+                        value=" videography "
+                     />Videography<br />
+                     <input
+                        type="radio"
+                        name="Service-type "
+                        value=" both "
+                     />Both<br />
+                     <br />
+                  </div>
 
-                    <p>Please select your interests(s):
-                        <br> *Select multiple options using 'ctrl' + 'click'</p>
-                    <div id="options">
-                        <select id="options" value="required" name="I'm interested in " id="interests" multiple required> 
-                        <option name="interests" value="  Wedding Photography ">Wedding Photography</option> 
-                        <option name="interests" value="  Wedding Videography ">Wedding Videography</option> 
-                        <option name="interests" value="  Portraits-Individual ">Portraits-Individual</option> 
-                        <option name="interests" value="  Portraits-Children ">Portraits-Children</option>  
-                        <option name="interests" value="  Portraits-Couples ">Portraits-Couples</option> 
-                        <option name="interests" value="  Portraits-Graduation ">Portraits-Graduation</option>  
-                        <option name="interests" value="  Portraits-Glamour ">Portraits-Glamour</option> 
-                        <option name="interests" value="  Sports-Photos ">Sports-Photo</option>  
-                        <option name="interests" value="  Sports-Videos ">Sports-Videos</option> 
-                        <option name="interests" value="  Photography-Events ">Photography-Events</option>  
-                        <option name="interests" value="  Videography-Events ">Videography-Events</option> 
-                        <option name="interests" value="  Photography-General ">Photography-General</option>  
-                        <option name="interests" value="  Videography-General ">Videography-General</option>  
-                    </select>
-                    </div>
+                  <p>
+                     Please select your interests(s): <br />
+                     *Select multiple options using 'ctrl' + 'click'
+                  </p>
+                  <div id="options">
+                     <select
+                        id="options"
+                        value="required"
+                        name="I'm interested in "
+                        id="interests"
+                        multiple
+                        required
+                     >
+                        <option name="interests" value="  Wedding Photography "
+                           >Wedding Photography</option
+                        >
+                        <option name="interests" value="  Wedding Videography "
+                           >Wedding Videography</option
+                        >
+                        <option name="interests" value="  Portraits-Individual "
+                           >Portraits-Individual</option
+                        >
+                        <option name="interests" value="  Portraits-Children "
+                           >Portraits-Children</option
+                        >
+                        <option name="interests" value="  Portraits-Couples "
+                           >Portraits-Couples</option
+                        >
+                        <option name="interests" value="  Portraits-Graduation "
+                           >Portraits-Graduation</option
+                        >
+                        <option name="interests" value="  Portraits-Glamour "
+                           >Portraits-Glamour</option
+                        >
+                        <option name="interests" value="  Sports-Photos "
+                           >Sports-Photo</option
+                        >
+                        <option name="interests" value="  Sports-Videos "
+                           >Sports-Videos</option
+                        >
+                        <option name="interests" value="  Photography-Events "
+                           >Photography-Events</option
+                        >
+                        <option name="interests" value="  Videography-Events "
+                           >Videography-Events</option
+                        >
+                        <option name="interests" value="  Photography-General "
+                           >Photography-General</option
+                        >
+                        <option name="interests" value="  Videography-General "
+                           >Videography-General</option
+                        >
+                     </select>
+                  </div>
 
-                    <p>Please select your timeframe:</p>
-                    <div id="timeframe">
-                        <input type="radio" name="Timeframe " value=" ASAP! "> ASAP!<br>
-                        <input type="radio" name="Timeframe " value=" 1-3 weeks "> 1-3 weeks<br>
-                        <input type="radio" name="Timeframe " value=" 1-3 months "> 1-3 months<br>
-                        <input type="radio" name="Timeframe " value=" 4-6 months "> 4-6 months<br>
-                        <input type="radio" name="Timeframe " value=" 7-9 months "> 7-9 months<br>
-                        <input type="radio" name="Timeframe " value=" 10-12 months "> 10-12 months<br>
-                        <input type="radio" name="Timeframe " value=" 12 months"> 12 months<br>
-                        <br></div>
+                  <p>Please select your timeframe:</p>
+                  <div id="timeframe">
+                     <input type="radio" name="Timeframe " value=" ASAP! " />
+                     ASAP!<br />
+                     <input
+                        type="radio"
+                        name="Timeframe "
+                        value=" 1-3 weeks "
+                     />
+                     1-3 weeks<br />
+                     <input
+                        type="radio"
+                        name="Timeframe "
+                        value=" 1-3 months "
+                     />
+                     1-3 months<br />
+                     <input
+                        type="radio"
+                        name="Timeframe "
+                        value=" 4-6 months "
+                     />
+                     4-6 months<br />
+                     <input
+                        type="radio"
+                        name="Timeframe "
+                        value=" 7-9 months "
+                     />
+                     7-9 months<br />
+                     <input
+                        type="radio"
+                        name="Timeframe "
+                        value=" 10-12 months "
+                     />
+                     10-12 months<br />
+                     <input type="radio" name="Timeframe " value=" 12 months" />
+                     12 months<br />
+                     <br />
+                  </div>
 
-                    Comments:<br>
-                    <textarea name="Comments"></textarea>
-                    <br>
+                  Comments:<br />
+                  <textarea name="Comments"></textarea>
+                  <br />
 
-                    <input type="submit" value="Send">
-                    <input type="reset" value="Reset">
-                </div>
+                  <input type="submit" value="Send" onclick="storeUserData()" />
+                  <input type="reset" value="Reset" />
+               </div>
             </form>
-        </div>
+         </div>
+      </main>
 
-    </main>
-
-    <footer>
-        <p>&copy; HannahMacPhotography</p>
-        <div id="social-media-icons">
-            <a class="socialmedia" target="_blank" href="https://www.facebook.com/hannies.hobby/"><img class="icon" src="../images/facebook-3-transparent-dkgray.png" alt="facebook"></a>
-            <a class="socialmedia" target="_blank" href="https://www.instagram.com/hannahmacphotography/"><img class="icon" src="../images/instagram-3-transparent-dkgray.png" alt="instagram"></a>
-            <a class="socialmedia" target="_blank" href="https://www.pinterest.com/hannahmacphotographygmailcom/boards/"><img class="icon" src="../images/pinterest-3-transparent-dkgray.png" alt="pinterest"></a>
-        </div>
-    </footer>
-    <script src="../scripts/dropDownMenu.js"></script>
-</body>
+      <footer>
+         <p>&copy; HannahMacPhotography</p>
+         <div id="social-media-icons">
+            <a
+               class="socialmedia"
+               target="_blank"
+               href="https://www.facebook.com/hannies.hobby/"
+               ><img
+                  class="icon"
+                  src="../images/facebook-3-transparent-dkgray.png"
+                  alt="facebook"
+            /></a>
+            <a
+               class="socialmedia"
+               target="_blank"
+               href="https://www.instagram.com/hannahmacphotography/"
+               ><img
+                  class="icon"
+                  src="../images/instagram-3-transparent-dkgray.png"
+                  alt="instagram"
+            /></a>
+            <a
+               class="socialmedia"
+               target="_blank"
+               href="https://www.pinterest.com/hannahmacphotographygmailcom/boards/"
+               ><img
+                  class="icon"
+                  src="../images/pinterest-3-transparent-dkgray.png"
+                  alt="pinterest"
+            /></a>
+         </div>
+      </footer>
+      <script src="../scripts/dropDownMenu.js"></script>
+   </body>
 </html>
