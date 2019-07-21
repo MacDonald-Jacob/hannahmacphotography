@@ -22,9 +22,9 @@
 
 #form-style {
     opacity: .7;
-    min-width: 300px;
+    min-width: 250px;
     max-width: 900px;
-	margin: 20px 15% 20px 10%;
+	margin: 20px 10% 20px 10%;
     border-radius: 2px;
     border: 6px solid;
     border-color: #789d61;
@@ -41,7 +41,8 @@
 
 #form-style textarea {
     margin: 0px 30px 0px 0px;
-    min-width: 300px;
+    min-width: 200px;
+    width:100%;
     min-height: 175px;
 }
 
@@ -54,6 +55,8 @@
 }
 
 #options {
-    width: 300px;
+    min-width: 200px;
+    width:100%;
+    max-width:300px;
     height: 275px;
 }
