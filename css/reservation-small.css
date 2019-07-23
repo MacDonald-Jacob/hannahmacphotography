@@ -287,6 +287,7 @@ th,
 thead#table,
 tr.day-columns {
 	margin-left: 0px;
+	text-align: left;
 }
 
 /**** search weather by location section ****/    
