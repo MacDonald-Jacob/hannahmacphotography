@@ -271,33 +271,63 @@ ul li #sat {
     max-width: 450px;
 }
 table {
-    margin: 20px 20px 40px 10px;
+    border-spacing: 2px;
+    border-collapse: collapse;
+	margin: 20px 20px 40px 20px;
+	border: 5px solid #dcd9d9;
+}
+thead {
+    vertical-align: middle;
+    background: #a68fbc;
+    background: -moz-linear-gradient(top, #a68fbc 0%,  #81609f 100%);
+    background: -webkit-linear-gradient(top, #a68fbc 0%,  #81609f 100%);
+    background: linear-gradient(to bottom, #a68fbc 0%,  #81609f 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a68fbc', endColorstr=' #81609f', GradientType=0);
+}
+th {
+    height: 45px;
+    color: black;
+    border-bottom: none;
+	margin-left: 10px;
+}
+th, td {
+    padding: 7px 20px;
+    text-align: center;
+    border-right: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+}
+tbody {
+    border: 1px solid white;
+    border-top: none;
+	margin-left: 10px;
+}
+tbody td:nth-child(odd) {
+    background-color: #ccbfd9;
+}
+.icon {
+    padding-bottom: 0;
+}
+th, td {
+    padding: 7px 20px;
+    text-align: center;
+    border-right: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
 }
 tr,
 td {
-	font-size: 10px;
+	font-size: 12px;
 }
-tbody,
-table.b,
-th,
-{
+table.b {
 	margin-left: 10px;
-	
-}
-thead#table,
-tr.day-columns {
-	margin-left: 0px;
-	text-align: left;
 }
 
+
 /**** search weather by location section ****/    
-#search {
-	margin-left: 10px;
-}
+#search,
 #city-name,
-div.temperature,
-div.humidity {
-	margin-left: 10px;
+#humidity-div,
+#temperature {
+    margin-left: 10px;
 }
 
 
