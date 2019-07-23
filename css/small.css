@@ -213,14 +213,16 @@ hr {
 /*  email form styling */
 
 .words {
-    margin: 20px 5% 0 5%;
+    /*margin: 20px 5% 0 5%;*/
+	margin: 20px 5% 0 0;
+    margin-left: 10px;
 }
 
 #form-style {
     opacity: .7;
     min-width: 250px;
     max-width: 900px;
-    margin: 20px 10% 20px 10%;
+    margin: 20px 10% 20px 10px;
     border-radius: 2px;
     border: 6px solid;
     border-color: #789d61;
