@@ -293,6 +293,12 @@ tr.day-columns {
 #search {
 	margin-left: 10px;
 }
+#city-name,
+div.temperature,
+div.humidity {
+	margin-left: 10px;
+}
+
 
 /****testimonials section****/
 .italic-testimonials {
