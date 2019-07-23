@@ -9,18 +9,17 @@
     <meta name="author" content="Kimberly Llanos, Jacob MacDonald, Austin, Kincade">
 
 
-    <title>Reservation: HannahMacPhotography</title>
+    <title>(7-22-19) Prod Reservation: HannahMacPhotography</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="../css/normalize.css" rel="stylesheet">
     <link href="../css/large.css" rel="stylesheet">
     <link href="../css/medium.css" rel="stylesheet">
-    <link href="../css/reservation-small.css" rel="stylesheet">
-    <!--<link href="../css/small.css" rel="stylesheet">-->
     <link href="../css/reservation.css" rel="stylesheet">
-    <!--<link href="../css/five-day-forecast.css" rel="stylesheet">--
+    <link href="../css/reservation-small.css" rel="stylesheet">
+    <!--<link href="../css/five-day-forecast.css" rel="stylesheet">-->
 
-	<!-- import Google fonts -->
+    <!-- import Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
 </head>
@@ -30,79 +29,90 @@
         <img src="../images/logo.png" alt="logo">
     </header>
 
+<!--new nav - do not delete-->
     <nav>
         <div class="topnav" id="myTopnav">
             <a href="../index.html">Home</a>
             <div class="dropdown">
-                <button class="dropbtn">Photography
-                <i class="fa fa-caret-down"></i>
-              </button>
+                <button class="dropbtn">
+                  Photography
+                  <i class="fa fa-caret-down"></i>
+               </button>
                 <div class="dropdown-content">
-                    <a href="../photography/weddingDay/weddingDayPage.html">Wedding Day</a>
-                    <a href="../photography/bridals/bridalsPage.html">Bridals</a>
-                    <a href="../photography/engagements/engagementsPage.html">Engagements</a>
-                    <a href="../photography/firstLook/firstLookPage.html">First Look</a>
-                    <a href="../photography/birthAndMaternity/Birth&Maternity.html">Birth and Maternity</a>
-                    <a href="../photography/family/familyPage.html">Family</a>
-                    <a href="../photography/productPhotography/productPhotographyPage.html">Product Photography</a>
-                </div>
+                    <a href="../photography/weddingDay/weddingDayPage.html">Wedding Day</a
+                  >
+                  <a href="../photography/bridals/bridalsPage.html">Bridals</a>
+                    <a href="../photography/engagements/engagementsPage.html">Engagements</a
+                  >
+                  <a href="../photography/firstLook/firstLookPage.html"
+                     >First Look</a
+                  >
+                  <a
+                     href="../photography/birthAndMaternity/Birth&Maternity.html"
+                     >Birth and Maternity</a
+                  >
+                  <a href="../photography/family/familyPage.html">Family</a>
+                    <a href="../photography/productPhotography/productPhotographyPage.html">Product Photography</a
+                  >
+               </div>
             </div>
             <a href="../videography/videographyPage.html">Videography</a>
-            <a href="../reservation/reservationPage.html" class="active">Reservations</a>
-            <a href="../bioContact/bioContactPage.html">Bio and Contact</a>
-            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-        </div>
-    </nav>
+                    <a href="../reservation/reservationPage.html">Reservations</a>
+                    <a href="../bioContact/bioContactPage.html" class="active">Bio and Contact</a
+            >
+            <a
+               href="javascript:void(0);"
+               style="font-size:15px;"
+               class="icon"
+               onclick="myFunction()"
+               >&#9776;</a
+            >
+         </div>
+      </nav>
+      <!-- <div navbar="../nav.html"></div> -->
 
     <main>
-
         <section id="section-intro">
-            <h2>My Availability Calendar</h2>
-            <p>Please let me know what dates and times you are interested in and then fill out
-                <a class="contact-bookmark" href="../bioContact/bioContactPage.html#contact-form">this form</a> to contact me directly.
-                <br><br> I will contact you within 24 hours ~ please be sure to let me know if you prefer me to email, call, or text you!
-                <br><br> In case you are looking to book a photograpy or videography session with me sooner rather than later, below is a 5-day forecast to give you an idea of what the weather will be like beginning with today's weather.
-                <br>
-            </p>
+            <h2>My Schedule</h2>
+            <p>I am generally available on these dates and times (Mountain Time):</p>
+            <ul id="weekly-availability">
+                <li>Sundays: OFF</li>
+                <li>Mon:<span id="mon"></span>10am - 3:30pm</li>
+                <li>Tue:<span id="tue"></span>10am - 2pm, 4pm - 8pm</li>
+                <li>Wed:<span id="wed"></span>10am - 2pm</li>
+                <li>Thu:<span id="thu"></span>10am - 12:30pm</li>
+                <li>Fri:<span id="fri"></span>8am - 12:30pm, 1:30pm - 9:30pm</li>
+                <li>Sat:<span id="sat"></span>8am - 12:30pm, 1:30pm - 9:30pm</li>
+            </ul>
         </section>
+        <hr>
+        <br>
 
-        <section id="reservation-calendar">
-            <div class="w3-container">
-                <!-- calendar [date] selector -->
-                <div id="cal-date">
-                    <select id="cal-mth"></select>
-                    <select id="cal-yr"></select>
-                    <input id="cal-set" type="button" value="SET" />
-                </div>
-
-                <!-- calendar container -->
-                <div id="cal-container"></div>
-
-                <!-- calendar event -->
-                <div id="cal-event"></div>
-            </div>
-        </section>
-
-
+        <!--weather forecast sections-->
         <section id="forecast-container">
-            <h2>Five Day Forecast</h2>
+            <h2>The Weather</h2>
+            <p>Weather can play such an big part of how an outdoor shoot can go.</p>
+            <br>
+            <h3>Local Weather Conditions</h3>
+            <p>These are the most up-to-date weather conditions for Ada County, ID</p>
             <div id="current-conditions-container">
                 <div class="text-block">
-                    <h3>Current Conditions</h3>
-                    <p>Currently: <span id="sky">currently</span></p>
-                    <p>Temperature: <span id="temp">temp</span>°</p>
-                    <p>Humidity: <span id="humidity">humidity</span>%</p>
-                    <p>Wind: <span id="windSpeed"></span>mph</p>
-                    <p>Feels like: <span id="windChill"></span>°</p>
+                    <p>Currently: <span id="sky">clear sky</span></p>
+                    <p>Temperature: <span id="temp">97.5</span>°</p>
+                    <p>Humidity: <span id="humidity">16</span>%</p>
+                    <p>Wind: <span id="windSpeed">4.7</span>mph</p>
+                    <p>Feels like: <span id="windChill">104</span>°</p>
                 </div>
-                <hr>
                 <br>
             </div>
-
+            <br>
+            
             <div id="five-day-container">
+                <h3> Five-day Forecast</h3>
+                <p>In case you are looking to book a photography or videography session within the next week, below is a 5-day forecast for our local area of Ada County, ID.</p>
                 <table class="b">
                     <thead id="table">
-                        <tr>
+                        <tr class="day-columns">
                             <th scope="col">Day 1</th>
                             <th scope="col">Day 2</th>
                             <th scope="col">Day 3</th>
@@ -113,11 +123,11 @@
 
                     <tbody>
                         <tr>
-                            <td class="icon"><img src="images/placeholder.png" alt="current weather" id="weather_icon1"></td>
-                            <td class="icon"><img src="images/placeholder.png" alt="current weather" id="weather_icon2"></td>
-                            <td class="icon"><img src="images/placeholder.png" alt="current weather" id="weather_icon3"></td>
-                            <td class="icon"><img src="images/placeholder.png" alt="current weather" id="weather_icon4"></td>
-                            <td class="icon"><img src="images/placeholder.png" alt="current weather" id="weather_icon5"></td>
+                            <td class="icon"><img src="../images/placeholder.png" alt="current weather" id="weather_icon1"></td>
+                            <td class="icon"><img src="../images/placeholder.png" alt="current weather" id="weather_icon2"></td>
+                            <td class="icon"><img src="../images/placeholder.png" alt="current weather" id="weather_icon3"></td>
+                            <td class="icon"><img src="../images/placeholder.png" alt="current weather" id="weather_icon4"></td>
+                            <td class="icon"><img src="../images/placeholder.png" alt="current weather" id="weather_icon5"></td>
                         </tr>
                         <tr>
                             <td class="desc"><span id="description1"></span></td>
@@ -150,9 +160,82 @@
                     </tbody>
                 </table>
             </div>
+            
+        </section>
+        <hr>
+
+        <section id="one-city-weather">
+           <h2>Search Weather for Your City</h2>
+            <p>In case you live outside of Ada County, ID, I have included a weather search by city name just for today's weather - because it's always good to know if you need to to bring an umbrella or sunscreen when you leave the house!</p>
+
+            <div id="weather-wrapper">
+                <div id="search-header">
+                    <h3>Enter the name of a city i.e. Chicago, London, Santa Barbara, Buenos Aires</h3>
+                    <div id="search">
+                        <input type="text" placeholder="Enter City Name" id="search-txt">
+                        <button id="search-btn-2" class="search-btn-2">Search</button>
+                    </div>
+
+                    <h2>Your City</h2>
+                    <div class="city-icon">
+
+                        <div class="city-icon-holder">
+                            <div id="city-name"></div>
+                            <img src="" alt="" id="icon">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="JSON-format">
+                    <h2>Weather Details</h2>
+
+                    <div class="temperature">
+                        <div id="temp"></div>
+                    </div>
+
+                    <div class="humidity">
+                        <div id="humidity-div"></div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <hr>
+            </div>
+            
         </section>
 
-        <section id="testmonials">
+        <!-- reservation calendar main container -->
+        <section id="reservation-calendar">
+            <h2>Add a Calendar-Event</h2>
+            <p>To 'save the date' <b>select a date on the calendar</b> to create an event (calendar events-options will display below the main calendar).</p>
+            <div class="w3-container">
+                <!-- calendar [date] selector -->
+                <div id="cal-date">
+                    <select id="cal-mth"></select>
+                    <select id="cal-yr"></select>
+                    <input id="cal-set" type="button" value="SET" />
+                </div>
+
+                <!-- calendar container -->
+                <div id="cal-container"></div>
+
+                <!-- calendar event -->
+                <div id="cal-event"></div>
+            </div>
+            <br>
+
+            <div id="calendar-dates-contact"></div>
+            <h3>Email Me!</h3>
+            <p>If you would rather <b>email me with dates and times</b> that you are interested in, please fill out
+                <a class="contact-bookmark" href="../bioContact/bioContactPage.html#contact-form"><b>this form</b></a> to contact me directly.
+                <br><br> I will contact you within 24 hours ~ please be sure to let me know if you prefer me to
+                <b>email</b>, <b>call</b>, or <b>text</b> you!
+                <br>
+            </p>
+        </section>
+        <hr>
+
+        <section id="testimonials">
             <h2> Recent Client Reviews</h2>
             <h3>Photography</h3>
             <p class="testimonials">
@@ -185,22 +268,22 @@
 
     </main>
 
-    <footer>
+    <footer id="footerHome">
         <p>&copy; HannahMacPhotography</p>
         <div id="social-media-icons">
-            <a class="socialmedia" target="_blank" href="https://www.facebook.com/hannies.hobby/"><img class="icon" src="../images/facebook-3-transparent-dkgray.png" alt="facebook"></a>
-            <a class="socialmedia" target="_blank" href="https://www.instagram.com/hannahmacphotography/"><img class="icon" src="../images/instagram-3-transparent-dkgray.png" alt="instagram"></a>
-            <a class="socialmedia" target="_blank" href="https://www.pinterest.com/hannahmacphotographygmailcom/boards/"><img class="icon" src="../images/pinterest-3-transparent-dkgray.png" alt="pinterest"></a>
+            <a class="socialmedia" target="_blank" href="https://www.facebook.com/hannies.hobby/"><img class="icon" src="../images/facebook-3-transparent-dkgray.png" alt="facebook" /></a>
+            <a class="socialmedia" target="_blank" href="https://www.instagram.com/hannahmacphotography/"><img class="icon" src="../images/instagram-3-transparent-dkgray.png" alt="instagram" /></a>
+            <a class="socialmedia" target="_blank" href="https://www.pinterest.com/hannahmacphotographygmailcom/boards/"><img class="icon" src="../images/pinterest-3-transparent-dkgray.png" alt="pinterest" /></a>
         </div>
     </footer>
 
     <!-- global scripts -->
-    <script src="../scripts/dropDownMenu.js"></script>
-    <script src="scripts/script.js"></script>
+    <script src="../scripts/hamburger.js"></script>
     <script src="../scripts/reservation-calendar.js"></script>
+    <script src="../scripts/onecityweather.js"></script>
+    <script src="../scripts/weather.js"></script>
+    <script src="../scripts/forecast.js"></script>
 
-    <!--<script src="../scripts/forecast.js"></script>-->
-    <!--<script src="../scripts/weather.js"></script>-->
 
 </body>
 

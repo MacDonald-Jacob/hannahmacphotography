@@ -15,35 +15,38 @@ Uses Local Storage method to save events locally
 #reservation-calendar,
 #forecast-container,
 {
-	margin: 50px;
+	/*margin: 50px;*/
 }
 
 #testimonials {
-	margin: 50px;
+	/*margin: 50px;*/
 }
+
 /******* Reservation Calendar Styling *****/
 #cal-date {
 	/*margin: 10px 3px;*/
-	margin: 20px 20px;
+	margin: 20px 10px;
 }
 
 #cal-mth,
 #cal-yr,
 #cal-set {
-	padding: 10px;
-	font-size: 1.2em;
-	border: 0;
-	background: #9a87ad;
-	color: #fff;
+    padding: 10px;
+    font-size: .75em;
+    border: 0;
+    background: #9a87ad;
+    color: #fff;
 }
 
 #calendar {
-	width: 50%;
+	/*width: 50%;*/
+	max-width: 100%;
+    margin-left: 0px;
 }
 
 #cal-container,
 #cal-event {
-	margin: 20px;
+	margin: 10px;
 }
 
 #calendar tr.head td {
@@ -53,6 +56,7 @@ Uses Local Storage method to save events locally
 	background: #9a87ad;
 	padding: 15px;
 	text-align: center;
+	font-size: .75em;
 }
 
 #calendar tr.day td {
@@ -71,8 +75,9 @@ Uses Local Storage method to save events locally
 }
 
 #calendar .dd {
-	font-size: 1.2em;
-	color: #999;
+    font-size: .75em;
+    color: #999;
+    font-weight: 600;
 }
 
 #calendar .evt {
@@ -126,5 +131,5 @@ Uses Local Storage method to save events locally
 }
 
 table {
-	margin: 20px 20px 40px 20px;
+    margin: 20px 20px 40px 10px;
 }

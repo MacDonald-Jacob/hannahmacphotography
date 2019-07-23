@@ -66,7 +66,7 @@ var cal = {
     //creates calendar table - weeks start on Sunday
     var cRow = document.createElement("tr"),
         cCell = null,
-        days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
+        days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     if (cal.sMon) { days.push(days.shift()); }
     for (var d of days) {
       cCell = document.createElement("td");
