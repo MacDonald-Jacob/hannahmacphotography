@@ -168,7 +168,9 @@ main {
     clear: both;
     min-height: 10rem;
 }
-
+h1{
+    color: #70548b;
+}
 h2 {
     color: #70548b;
 }

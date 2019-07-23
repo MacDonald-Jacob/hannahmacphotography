@@ -27,6 +27,8 @@
          href="https://fonts.googleapis.com/css?family=Parisienne"
          rel="stylesheet"
       />
+      <link href="https://fonts.googleapis.com/css?family=Ewert&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Ewert&display=swap" rel="stylesheet">
    </head>
    <body>
       <header>
@@ -58,7 +60,11 @@
       </nav>
 
       <main>
-         <h1>Blacklisted Bandits</h1>
+         <div class = "mouseOver" onmouseover="mOver(this)" onmouseout="mOut(this)">
+            <h1>Blacklisted Bandits and Co.</h1>
+   
+         </div>
+         
          <div id="BlacklistBanditsGallery" class="gallery">
             <div class="item">
                <img src="./images/BlacklistedBandits/855A1215.jpg" />
@@ -76,7 +82,12 @@
                <img src="./images/BlacklistedBandits/855A1381.jpg" />
             </div>
          </div>
-         <h1>Wild Rag Boutique</h1>
+         
+         <div class = "mouseOver" onmouseover="mOver2(this)" onmouseout="mOut2(this)">
+               <h1>Wild Rag Boutique</h1>
+
+         </div>
+         
          <div id="WildRagBoutique" class="gallery">
             <div class="item">
                <img src="./images/WildRagBoutique/855A0008.jpg" />
@@ -123,5 +134,7 @@
         </div>
       </footer>
       <script src="../../scripts/dropDownMenu.js"></script>
+      <script src="scripts/scripts.js"></script>
+
    </body>
 </html>
