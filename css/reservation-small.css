@@ -264,7 +264,8 @@ ul li #sat {
 
 /****five-day forecast section****/
 #five-day-container {
-    max-width: 450px;
+    /*max-width: 450px;*/
+	max-width: 100%;
 }
 table {
     border-spacing: 2px;
@@ -279,6 +280,13 @@ thead {
     background: -webkit-linear-gradient(top, #a68fbc 0%,  #81609f 100%);
     background: linear-gradient(to bottom, #a68fbc 0%,  #81609f 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a68fbc', endColorstr=' #81609f', GradientType=0);
+}
+
+thead#table {
+	max-width: 5px;
+}
+tr.day-columns {
+	max-width: 10px;
 }
 th {
     height: 45px;
@@ -296,6 +304,7 @@ tbody {
     border: 1px solid white;
     border-top: none;
 	margin-left: 10px;
+	max-width: 2px;
 }
 tbody td:nth-child(odd) {
     background-color: #ccbfd9;
@@ -312,9 +321,12 @@ th, td {
 tr,
 td {
 	font-size: 12px;
+	max-width: 10px:
 }
 table.b {
 	margin-left: 10px;
+	max-width: 50%;
+	min-width: 20%;
 }
 
 
