@@ -1,50 +1,28 @@
-var addButton = document.getElementById('addButton');
-var itemList = document.getElementById('interests');
+let addButton = document.getElementById('addButton');
+let itemList = document.getElementById('options');
 
 // Add item button click
 addButton.addEventListener('click', addItem);
 
 // Add item
 function addItem(e) {
+   e.preventDefault();
+
    // Get input value
-   var newItem = document.getElementById('item').value;
+   let newItem = document.getElementById('item').value;
 
    // Create new option element
-   var li = document.createElement('option');
+   let option = document.createElement('option');
 
    // Add text node with input value
-   li.appendChild(document.createTextNode(newItem));
+   option.appendChild(document.createTextNode(newItem));
 
-   // Append text node
-   deleteBtn.appendChild(document.createTextNode('X'));
+   // need to add name attribute
+   option.setAttribute('name', 'interests');
+
+   // add value attribute with provided text
+   option.setAttribute('value', newItem);
 
    // Append li to list
-   itemList.appendChild(li);
-}
-
-// Remove item
-function removeItem(e) {
-   if (e.target.classList.contains('delete')) {
-      if (confirm('Are You Sure?')) {
-         var li = e.target.parentElement;
-         itemList.removeChild(li);
-      }
-   }
-}
-
-// Filter Items
-function filterItems(e) {
-   // convert text to lowercase
-   var text = e.target.value.toLowerCase();
-   // Get lis
-   var items = itemList.getElementsByTagName('li');
-   // Convert to an array
-   Array.from(items).forEach(function(item) {
-      var itemName = item.firstChild.textContent;
-      if (itemName.toLowerCase().indexOf(text) != -1) {
-         item.style.display = 'block';
-      } else {
-         item.style.display = 'none';
-      }
-   });
+   itemList.appendChild(option);
 }
