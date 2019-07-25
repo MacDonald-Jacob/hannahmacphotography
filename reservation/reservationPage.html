@@ -9,7 +9,7 @@
 	<meta name="author" content="Kimberly Llanos, Jacob MacDonald, Austin, Kincade">
 
 
-	<title>(7-23-19.01) PROD Reservation: HannahMacPhotography</title>
+	<title>(7-24-19.02) PROD Reservation: HannahMacPhotography</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href="../css/normalize.css" rel="stylesheet">
@@ -85,20 +85,20 @@
             </ul>
         </section>
         <hr>
-        <br>
+        <br />
 
         <!--weather forecast sections-->
-        <section id="forecast-container">
+        <section id="current-forecast-section">
             <h2>The Weather</h2>
             <h3>Local Weather Right Now</h3>
                <p>Weather can play such an big part of how an outdoor shoot can go so you always want to know what the current weather conditions are. 
-               <br>
-               <br>
+               <br />
+               <br />
                It's also nice to have an idea of what the weather might be like a few days in advance, which cold make a difference in what day you want to schedule a session. 
-               <br>
-               <br>
+               <br />
+               <br />
                These are the most up-to-date weather conditions for our local Ada County, ID area.</p>
-            <div id="current-conditions-container">
+            <div class="current-conditions">
                 <div class="text-block">
                     <p>Currently: <span id="sky">clear sky</span></p>
                     <p>Temperature: <span id="temp">97.5</span>°</p>
@@ -106,11 +106,12 @@
                     <p>Wind: <span id="windSpeed">4.7</span>mph</p>
                     <p>Feels like: <span id="windChill">104</span>°</p>
                 </div>
-                <br>
+                <br />
             </div>
-            <br>
-            
-            <div id="five-day-container">
+		</section>
+            <br />
+         <section id="five-day-section">
+            <div id="five-day-div">
                 <h3> Five-day Forecast for Ada County, ID</h3>
                 <p>In case you are looking to book a photography or videography session <b>within the next week</b>, below is a 5-day forecast for our local area weather.</p>
                 <table class="b">
@@ -163,15 +164,14 @@
                     </tbody>
                 </table>
             </div>
-            
         </section>
         <hr>
 
         <section id="one-city-weather">
            <h2>Search Weather for Your City</h2>
             <p>In case you live outside of Ada County, ID, I have included a weather search by city name for today's "current weather" in YOUR city.
-            <br>
-            <br>
+            <br />
+            <br />
             Because it's always good to know if you need to to bring an umbrella or sunscreen when you leave the house!</p>
 
             <div id="weather-wrapper">
@@ -196,15 +196,15 @@
                     <h3>Weather Details</h3>
 
                     <div class="temperature">
-                        <div id="temp"></div>
+                        <div id="temp-div"></div>
                     </div>
-
+					<br />
                     <div class="humidity">
                         <div id="humidity-div"></div>
                     </div>
                 </div>
-                <br>
-                <br>
+                <br />
+                <br />
                 <hr>
             </div>
             
@@ -214,29 +214,33 @@
         <section id="reservation-calendar">
             <h2>Add a Calendar-Event</h2>
             <p>To 'save the date' <b>select a date on the calendar</b> to create an event (calendar events-options will display below the main calendar).</p>
-            <div class="w3-container">
+            <p>To edit an event, <b>click on the date with the event</b> you want to edit (the 'edit event' option will display below the main calendar).</p>
+            <p>
+            You can also <b>delete and event</b> using the same steps as above.
+			</p>
+            <div class="calendar-event-container">
                 <!-- calendar [date] selector -->
-                <div id="cal-date">
-                    <select id="cal-mth"></select>
-                    <select id="cal-yr"></select>
-                    <input id="cal-set" type="button" value="SET" />
+                <div id="calendar-date">
+                    <select id="calendar-month"></select>
+                    <select id="calendar-year"></select>
+                    <input id="calendar-set" type="button" value="SET" />
                 </div>
 
                 <!-- calendar container -->
-                <div id="cal-container"></div>
+                <div id="calendar-container"></div>
 
                 <!-- calendar event -->
-                <div id="cal-event"></div>
+                <div id="calendar-event"></div>
             </div>
-            <br>
+            <br />
 
             <div id="calendar-dates-contact"></div>
-            <h3>Email Me!</h3>
+            <h2>Email Me!</h2>
             <p>If you would rather <b>email me with dates and times</b> that you are interested in, please fill out
                 <a class="contact-bookmark" href="../bioContact/bioContactPage.html#contact-form"><b>this form</b></a> to contact me directly.
-					<br><br> I will contact you within 24 hours ~ please be sure to let me know if you prefer me to
+					<br /><br /> I will contact you within 24 hours ~ please be sure to let me know if you prefer me to
 					<b>email</b>, <b>call</b>, or <b>text</b> you!
-					<br>
+					<br />
 					</p>
 					</section>
 					<hr>
@@ -246,30 +250,30 @@
 						<h3>Photography</h3>
 						<p class="testimonials">
 							<span class="italic-testimonials">“HANNAH IS AMAZING! We will never go to another photographer. she is so fun and creative. she makes you feel so special and beautiful too. she is so fun to be around and makes you laugh. she is an INCREDIBLE photographer. we have loved all the work she has done for us. we have never been disappointed and have done multiple shoots with us. she is truly amazing at what she does!”</span>
-							<br>~Courtney p.
-							<br>Jun 6, 2019</p>
-						<br>
+							<br />~Courtney p.
+							<br />Jun 6, 2019</p>
+						<br />
 						<h3>Engagement Photography | Wedding Photography & Videography</h3>
 						<p class="testimonials">
 							<span class="italic-testimonials">“Hannah took our engagement pictures and bridals as well as filmed a video we are lucky enough to look back at for forever! She is so easy to work with and so outgoing that it doesn’t make you feel awkward being so passionate while taking pictures! also, her picture quality is AMAZING, as well as her edits. and i’m super picky so that says a lot. we will definitely be going back to hannah for more family pictures in the future! 10/10 recommend she’s the best!”</span>
-							<br>~ Annie W.
-							<br>May 27, 2019</p>
-						<br>
-						<br>
+							<br />~ Annie W.
+							<br />May 27, 2019</p>
+						<br />
+						<br />
 						<h3>Wedding Photography</h3>
 						<p class="testimonials">
 							<span class="italic-testimonials">“Hannah was AMAZING to work with! I loved that she was so engaged the whole shoot. She was super outgoing and made the shoot fun. We took our bridals with her and they look stunning. She was easy to work with and she knows her stuff! I would highly recommend booking her😊”</span>
-							<br>~Emilie V.
-							<br>Mar 20, 2019</p>
-						<br>
-						<br>
+							<br />~Emilie V.
+							<br />Mar 20, 2019</p>
+						<br />
+						<br />
 						<h3>Family Portrait Photography</h3>
 						<p class="testimonials">
 							<span class="italic-testimonials">“We just finished a large family shoot with Hannah and were more than impressed! She was easy to work with and especially good with the little ones we had. We had a couple of edited proofs within the hour. I would highly recommend Hannah to anyone looking for a photographer!”</span>
-							<br>~ Shauna H.
-							<br>Dec 28, 2017</p>
-						<br>
-						<br>
+							<br />~ Shauna H.
+							<br />Dec 28, 2017</p>
+						<br />
+						<br />
 					</section>
 
 					</main>

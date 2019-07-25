@@ -7,7 +7,7 @@ let searchInput = document.getElementById("search-txt");
 //ID variables for returned (onscreen) data values
 let cityName = document.getElementById("city-name");
 let icon = document.getElementById("icon");
-let temperature = document.getElementById("temp");
+let temperature = document.getElementById("temp-div");
 let humidity = document.getElementById("humidity-div");
 
 //executes findWeatherDetails() when the user clicks into the search box
@@ -43,18 +43,19 @@ function theResponse(response) {
 	//pulls the corresponding weather-type icon from weather site
 	icon.src = "http://openweathermap.org/img/w/" + jsonObject.weather[0].icon + ".png";
 
-	//stringified celsius temperature data is parsed into "Fahrenheit degree value"
-	//displayed in the temperature div
-	temperature.innerHTML = 'The current temperature is ' + Math.round((parseFloat(jsonObject.main.temp - 273.15) * 1.8) + 32) + "°" + "F";
-
 	//stringified humidity data is parsed into a "value %"
 	//displayed in the hunidity div
 	humidity.innerHTML = 'The current relative humidity is ' + jsonObject.main.humidity + "%";
-
+	
+	
+	//stringified celsius temperature data is parsed into "Fahrenheit degree value"
+	//displayed in the temperature div
+	temperature.innerHTML = 'The current temperature is ' + Math.round((parseFloat(jsonObject.main.temp - 273.15) * 1.8) + 32) + "°" + "F";
+}
 
 	// API data in raw (stringified) format
 	//document.getElementById('stringified').innerHTML = JSON.stringify(response);
-}
+
 
 
 //my AJAX XMLHttpRequest object

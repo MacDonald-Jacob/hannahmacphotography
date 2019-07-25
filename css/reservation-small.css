@@ -196,16 +196,12 @@ h3 {
 
 /****static weekly availability section (section intro)****/
 ul#weekly-availability {
-    /*background: #ccbfd9;
-    background: #8e6b57;
-    background: #edecec;*/
     background: #dcd9d9;
     padding: 2px;
     max-width: 450px;
     margin-left: 10px;
 }
 ul#weekly-availability li {
-    /*background: #70548b;*/
     background: #81609f;
     margin: 10px;
     list-style-type: none;
@@ -235,16 +231,15 @@ ul li #sat {
 }
 
 
-/****forecast section****/
-#forecast-container {
+/****current weather conditions section****/
+#JSON-format {
+	min-height: 150px;
+}
+#current-forecast-section{
 	margin-top: -30px;
 }
-
-
-
-/****current weather conditions section****/
-#current-conditions-container {
-    max-width: 450px;
+.current-conditions {
+    max-width: 300px;
 }
 .text-block {
     background-color: #f3f2f2;
@@ -254,17 +249,21 @@ ul li #sat {
 }
 .text-block p {
     font-weight: 600;
-    /*color: white;*/
     color: #674d80;
-    /*color: #70548b;*/
     margin: 10px;
     max-height: 55px;
     padding: 2px 2px 5px 2px;
 }
 
 /****five-day forecast section****/
-#five-day-container {
-    /*max-width: 450px;*/
+#five-day-section {
+	max-width: 300px;
+}
+
+div#five-day-div {
+	max-width: 300px;
+}
+#five-day-div {
 	max-width: 100%;
 }
 table {
@@ -283,7 +282,7 @@ thead {
 }
 
 thead#table {
-	max-width: 5px;
+	max-width: 30px;
 }
 tr.day-columns {
 	max-width: 10px;
@@ -313,31 +312,45 @@ tbody td:nth-child(odd) {
     padding-bottom: 0;
 }
 th, td {
-    padding: 7px 20px;
+    padding: 4px 10px;
     text-align: center;
     border-right: 1px solid lightgrey;
     border-left: 1px solid lightgrey;
+	max-width: 60px;
 }
 tr,
 td {
 	font-size: 12px;
-	max-width: 10px:
+	max-width: 55px:
 }
 table.b {
 	margin-left: 10px;
 	max-width: 50%;
 	min-width: 20%;
 }
-
+tr.day-columns {
+	max-width: 55px;
+}
 
 /**** search weather by location section ****/    
 #search,
 #city-name,
 #humidity-div,
-#temperature {
+#temperature,
+#temp-div {
     margin-left: 10px;
 }
 
+/**** add-an-event Calendar ****/  
+#calendar tr.head td {
+    max-width: 40px;
+}
+
+
+/*tr.head td {
+	margin-left:5px;
+}
+*/
 
 /****testimonials section****/
 .italic-testimonials {
