@@ -32,9 +32,12 @@ header img {
 
 /*-----------NAVAGATION----------------*/
 
+
 /**(new) dropdown van styling**/
 
+
 /* Add a black background color to the top navigation */
+
 .topnav {
     background-color: #dcd9d9;
     overflow: hidden;
@@ -42,6 +45,7 @@ header img {
 
 
 /* Style the links inside the navigation bar */
+
 .topnav a {
     float: left;
     display: block;
@@ -54,6 +58,7 @@ header img {
 
 
 /* Add an active class to highlight the current page */
+
 .active {
     background-color: #789d61;
     color: white;
@@ -61,12 +66,14 @@ header img {
 
 
 /* Hide the link that should open and close the topnav on small screens */
+
 .topnav .icon {
     display: none;
 }
 
 
 /* Dropdown container - needed to position the dropdown content */
+
 .dropdown {
     float: left;
     overflow: hidden;
@@ -74,6 +81,7 @@ header img {
 
 
 /* Style the dropdown button to fit inside the topnav */
+
 .dropdown .dropbtn {
     font-size: 17px;
     border: none;
@@ -87,6 +95,7 @@ header img {
 
 
 /* Style the dropdown content (hidden by default) */
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -98,6 +107,7 @@ header img {
 
 
 /* Style the links inside the dropdown */
+
 .dropdown-content a {
     float: none;
     color: black;
@@ -110,6 +120,7 @@ header img {
 
 
 /* Add a dark background on topnav links and the dropdown button on hover */
+
 .topnav a:hover,
 .dropdown:hover .dropbtn {
     background-color: #86619d;
@@ -118,6 +129,7 @@ header img {
 
 
 /* Add a grey background to dropdown links on hover */
+
 .dropdown-content a:hover {
     background-color: #ddd;
     color: black;
@@ -125,12 +137,14 @@ header img {
 
 
 /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child),
     .dropdown .dropbtn {
@@ -144,6 +158,7 @@ header img {
 
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
 @media screen and (max-width: 600px) {
     .topnav.responsive {
         position: relative;
@@ -172,7 +187,6 @@ header img {
 }
 
 
-
 /*---------------MAIN-------------------*/
 
 main {
@@ -194,18 +208,17 @@ h3 {
     margin-left: 10px;
 }
 
+
 /****static weekly availability section (section intro)****/
+
 ul#weekly-availability {
-    /*background: #ccbfd9;
-    background: #8e6b57;
-    background: #edecec;*/
     background: #dcd9d9;
     padding: 2px;
     max-width: 450px;
     margin-left: 10px;
 }
+
 ul#weekly-availability li {
-    /*background: #70548b;*/
     background: #81609f;
     margin: 10px;
     list-style-type: none;
@@ -215,136 +228,187 @@ ul#weekly-availability li {
     padding-top: 12px;
     padding-bottom: 10px;
 }
+
 ul li #mon {
     margin-left: 13px;
 }
+
 ul li #tue {
     margin-right: 20px;
 }
+
 ul li #wed {
     margin-left: 15px;
 }
+
 ul li #thu {
     margin-right: 20px;
 }
+
 ul li #fri {
     margin-left: 30px;
 }
+
 ul li #sat {
     margin-right: 28px;
 }
 
 
-/****forecast section****/
-#forecast-container {
-	margin-top: -30px;
-}
-
-
-
 /****current weather conditions section****/
-#current-conditions-container {
-    max-width: 450px;
+
+#JSON-format {
+    min-height: 150px;
 }
+
+#current-forecast-section {
+    margin-top: -30px;
+}
+
+.current-conditions {
+    max-width: 300px;
+}
+
 .text-block {
     background-color: #f3f2f2;
     max-width: 450px;
     margin-left: 10px;
     border: 5px double #70548b;
 }
+
 .text-block p {
     font-weight: 600;
-    /*color: white;*/
     color: #674d80;
-    /*color: #70548b;*/
     margin: 10px;
     max-height: 55px;
     padding: 2px 2px 5px 2px;
 }
 
+
 /****five-day forecast section****/
-#five-day-container {
-    /*max-width: 450px;*/
-	max-width: 100%;
+
+#five-day-section {
+    max-width: 300px;
 }
+
+div#five-day-div {
+    max-width: 300px;
+}
+
+#five-day-div {
+    max-width: 100%;
+}
+
 table {
     border-spacing: 2px;
     border-collapse: collapse;
-	margin: 20px 20px 40px 20px;
-	border: 5px solid #dcd9d9;
+    margin: 20px 20px 40px 20px;
+    border: 5px solid #dcd9d9;
 }
+
 thead {
     vertical-align: middle;
     background: #a68fbc;
-    background: -moz-linear-gradient(top, #a68fbc 0%,  #81609f 100%);
-    background: -webkit-linear-gradient(top, #a68fbc 0%,  #81609f 100%);
-    background: linear-gradient(to bottom, #a68fbc 0%,  #81609f 100%);
+    background: -moz-linear-gradient(top, #a68fbc 0%, #81609f 100%);
+    background: -webkit-linear-gradient(top, #a68fbc 0%, #81609f 100%);
+    background: linear-gradient(to bottom, #a68fbc 0%, #81609f 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a68fbc', endColorstr=' #81609f', GradientType=0);
 }
 
 thead#table {
-	max-width: 5px;
+    max-width: 30px;
 }
+
 tr.day-columns {
-	max-width: 10px;
+    max-width: 10px;
 }
+
 th {
     height: 45px;
     color: black;
     border-bottom: none;
-	margin-left: 10px;
+    margin-left: 10px;
 }
-th, td {
+
+th,
+td {
     padding: 7px 20px;
     text-align: center;
     border-right: 1px solid lightgrey;
     border-left: 1px solid lightgrey;
 }
+
 tbody {
     border: 1px solid white;
     border-top: none;
-	margin-left: 10px;
-	max-width: 2px;
+    margin-left: 10px;
+    max-width: 2px;
 }
+
 tbody td:nth-child(odd) {
     background-color: #ccbfd9;
 }
+
 .icon {
     padding-bottom: 0;
 }
-th, td {
-    padding: 7px 20px;
+
+th,
+td {
+    padding: 4px 10px;
     text-align: center;
     border-right: 1px solid lightgrey;
     border-left: 1px solid lightgrey;
+    max-width: 60px;
 }
+
 tr,
 td {
-	font-size: 12px;
-	max-width: 10px:
+    font-size: 12px;
+    max-width: 55px:
 }
+
 table.b {
-	margin-left: 10px;
-	max-width: 50%;
-	min-width: 20%;
+    margin-left: 10px;
+    max-width: 50%;
+    min-width: 20%;
+}
+
+tr.day-columns {
+    max-width: 55px;
 }
 
 
-/**** search weather by location section ****/    
+/**** search weather by location section ****/
+
 #search,
 #city-name,
 #humidity-div,
-#temperature {
+#temp-div {
     margin-left: 10px;
 }
 
 
-/****testimonials section****/
-.italic-testimonials {
-    font-style: italic;
+/**** add-an-event Calendar ****/
+
+#calendar tr.head td {
+    max-width: 40px;
 }
 
 
+/*tr.head td {
+	margin-left:5px;
+}
+*/
+
+
+/****testimonials section****/
+
+.italic-testimonials {
+    font-style: italic;
+}
+p.testimonials {
+	min-width: 280px;
+}
 
 /*-------------FOOTER-----------------*/
 

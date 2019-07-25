@@ -11,26 +11,31 @@ Uses Local Storage method to save events locally
 	text-decoration: underline;
 }
 
+/*
 #section-intro,
 #reservation-calendar,
 #forecast-container,
 {
-	/*margin: 50px;*/
+	margin: 50px;
 }
+*/
 
+
+/*
 #testimonials {
-	/*margin: 50px;*/
+	margin: 50px;
 }
+*/
+
 
 /******* Reservation Calendar Styling *****/
-#cal-date {
-	/*margin: 10px 3px;*/
+#calendar-date {
 	margin: 20px 10px;
 }
 
-#cal-mth,
-#cal-yr,
-#cal-set {
+#calendar-month,
+#calendar-year,
+#calendar-set {
     padding: 10px;
     font-size: .75em;
     border: 0;
@@ -39,13 +44,12 @@ Uses Local Storage method to save events locally
 }
 
 #calendar {
-	/*width: 50%;*/
 	max-width: 100%;
     margin-left: 0px;
 }
 
-#cal-container,
-#cal-event {
+#calendar-container,
+#calendar-event {
 	margin: 10px;
 }
 
@@ -55,7 +59,7 @@ Uses Local Storage method to save events locally
 	color: #fff;
 	background: #9a87ad;
 	padding: 15px;
-	text-align: center;
+	text-align: left;
 	font-size: .75em;
 }
 
@@ -106,7 +110,7 @@ Uses Local Storage method to save events locally
 	margin: 10px 0;
 }
 
-#cal-event textarea {
+#calendar-event textarea {
 	display: block;
 	box-sizing: padding-box;
 	width: 90%;
@@ -116,8 +120,8 @@ Uses Local Storage method to save events locally
 	resize: none;
 }
 
-#cal-event input[type=button],
-#cal-event input[type=submit] {
+#calendar-event input[type=button],
+#calendar-event input[type=submit] {
 	padding: 10px;
 	margin: 5px;
 	font-size: 1.2em;

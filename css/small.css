@@ -211,12 +211,14 @@ hr {
 
 #form-container {
     padding: 10px;
+	max-width: 320px;
 }
 
 #form-style textarea {
     margin: 0px 30px 0px 0px;
     min-width: 200px;
-    width: 100%;
+  /* width: 100%;*/
+	min-width: 200px;
     min-height: 175px;
 }
 
@@ -239,6 +241,9 @@ textarea#comments {
     height: 275px;
 }
 
+input#options {
+	max-height: 25px;
+}
 
 /*--------FOOTER-----------------------*/
 
