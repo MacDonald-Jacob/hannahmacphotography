@@ -406,7 +406,9 @@ tr.day-columns {
 .italic-testimonials {
     font-style: italic;
 }
-
+p.testimonials {
+	min-width: 280px;
+}
 
 /*-------------FOOTER-----------------*/
 
